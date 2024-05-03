@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +14,7 @@ body {
   height: 100%;
   background-color: #0a0a0a;
   color: white;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue';
 }
 
 .pages {
@@ -21,13 +24,16 @@ body {
   align-items: center;
   height: 100%;
   width: 100vw;
+  margin-top: 5rem;
 }
 
 .navbar {
-  background: linear-gradient(to bottom, #000000, #333333);
+  background: linear-gradient(to bottom, #000000, #00000000);
+  font-family: 'electrolize';
 }
 
 .footer {
   position: absolute;
   bottom: 0px;
+  visibility: hidden;
 }

@@ -1,6 +1,37 @@
 .gameplayPage {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
     height: 90vh;
     width: 100vw;
+    border: 1px solid white;
+    position: relative; 
+    margin-top: 5rem;
+}
+
+.mintContainer, .forgingContainer, .tradingContainer, .nukingContainer {
+    width: 40vw;
+    text-align: center;
+    position: absolute;
+}
+
+.mintContainer {
+    right: 10px;
+    top: 28vh; /* Adjust the top value as needed */
+}
+
+.forgingContainer {
+    left: 10px;
+    top: 58vh; /* Adjust the top value as needed */
+}
+
+.tradingContainer {
+    right: 10px;
+    top: 88vh; /* Adjust the top value as needed */
+}
+
+.nukingContainer {
+    left: 10px;
+    top: 108vh; /* Adjust the top value as needed */
 }

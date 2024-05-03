@@ -10,8 +10,8 @@ const links = [
     { url: '/', text: 'HOME' },
     { url: '/art', text: 'ART' },
     { url: '/community', text: 'COMMUNITY' },
-    { url: '/gameplay', text: 'GAME-PLAY' },
-    { url: 'https://www.traitforge.game/', text: 'PLAY NOW' },
+    { url: '/gameplay', text: 'GAME PLAY' },
+    { url: 'https://www.traitforge.game/', text: 'PLAY NOW!' },
   ];
 
   const mediaLinks = [
@@ -24,14 +24,14 @@ const Navbar = () => {
     const router = useRouter();
 
     return (
-        <nav className="navbar text-white p-2">
+        <nav className="navbar text-white fixed top-0 w-full p-2">
             <Link href="/">
               <Logo />
             </Link>
           <div className="container absolute right-5 top-6 flex justify-end">
 
             <div className="container flex justify-end mr-10 mt-1.5">
-            <ul className="flex space-x-4 text-xl list-none">
+            <ul className="flex space-x-7 text-xl list-none">
             {links.map((link, index) => (
             <li key={index}>
               <Link
