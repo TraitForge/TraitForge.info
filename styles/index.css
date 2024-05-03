@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 html,
 body {
   margin: 0;
@@ -6,4 +12,20 @@ body {
   background-color: #0a0a0a;
   color: white;
   font-family: 'Bebas Neue', sans-serif;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.navbar {
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
 }
