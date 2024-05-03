@@ -16,13 +16,15 @@ body {
 
 .pages {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100vw;
 }
 
 .navbar {
-
+  background: linear-gradient(to bottom, #000000, #333333);
 }
 
 .footer {
