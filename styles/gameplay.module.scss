@@ -1,14 +1,3 @@
-.gameplayPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; 
-    height: 90vh;
-    width: 100vw;
-    border: 1px solid white;
-    position: relative; 
-    margin-top: 5rem;
-}
 
 .mintContainer, .forgingContainer, .tradingContainer, .nukingContainer {
     width: 40vw;

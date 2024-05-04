@@ -1,35 +1,32 @@
-import React, {Suspense} from 'react';
-import { LoadingSpinner } from '@/components'
+import React from 'react';
+import Playnow from './playnow'
+import TraitforgeIntro from './TraitforgeIntro';
+import Art from './art';
 
 const Home = () => {
   return (
-    <div className="pages">
-      <Suspense> {LoadingSpinner} </Suspense>
-      <>
-        <h1 className="text-6xl mb-6"> ABOUT TRAITFORGE </h1>
-        <p className="w-6/12 text-3xl text-center mb-10 border-b-2"> 
-          TraitForge, launched in 2024, is at the forefront of gaming innovation, 
-          utilizing blockchain technology to ReInvent GameFi. The company is committed to developing a unique, 
-          immersive game that leverages the benefits of DeFi.
-        </p>
-      </>
-      <>
-        <h2 className="text-6xl mt-9 mb-6"> WHY TRAITFORGE?</h2>
-        <p className="w-6/12 text-xl text-center mb-10 border-b-2">
-        NFT projects have huge potential but are currently squandered by grifters and profiteers with no vision. 
-        Profile-pic collections are one-time releases with large mints but lack roadmap and value-accrual mechanisms; 
-        the best offered is limited to in-person meetups and merchandise sales. 
-        NFT games attempt to strap scarcity around in-game items but lack compelling strategy and gameplay. 
-        This, combined with the confusing additions of fungible tokens results in a flooded landscape of depressing floor prices, 
-        rugging founders and chaotic discord groups.
-        This project re-imagines the NFT landscape with a collectors game around a central honeypot which provides multiple lanes of strategy.
-        Coupled with strong value-accrual mechanisms and a reason-to-play, the project can work at any scale - 
-        from a cute little game all the way up to a L1-reorging behemoth that attracts the attention of ethereum block-producers and OGs alike.
-        Finally, to add another layer of strategy, dividends from the game is accrued to participants themselves by way of an airdrop and a DAO contract for Buy/Burn.
-        </p>
-        </>
+    <div className="flex flex-col h-screen overflow-y-scroll">
+      <section className="page1 mb-screen" id="index">
+        <div className="absolute left-32 items-start justify-center">
+          <div className="flex flex-col items-start">
+            <h1 className="text-7xl mb-5">FORGE</h1>
+            <h1 className="text-7xl mb-5">YOUR</h1>
+            <h1 className="text-7xl mb-5">DESTINY</h1>
+          </div>
+          <div className="text-3xl">
+            <p>Mint, Nuke and Forge Your Way to</p>
+            <p>Infinite Possibilities!</p>
+          </div>
+        </div>
+      </section>
+      <section className="page2" key="TraitforgeIntro">
+      <Playnow/>
+      </section>
+      <section className="page3" key="Playnow">
+      <TraitforgeIntro/>
+      </section>
     </div>
-)
+  );
 };
 
 export default Home;

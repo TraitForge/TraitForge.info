@@ -11,29 +11,63 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: #0a0a0a;
+  background-color: #0F3F54;
+  z-index: 0;
   color: white;
-  font-family: 'Bebas Neue';
+  font-family: 'Electrolize';
 }
 
-.pages {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100vw;
-  margin-top: 5rem;
+.headers {
+  font-family: 'bebas neue';
 }
 
 .navbar {
-  background: linear-gradient(to bottom, #000000, #00000000);
-  font-family: 'electrolize';
+  background: rgba(0, 0, 0, 0.344);
+  font-family: 'bebas neue';
+  z-index: 110;
 }
 
 .footer {
   position: absolute;
   bottom: 0px;
   visibility: hidden;
+}
+
+
+.page1 {
+  background-image: linear-gradient(to bottom, rgba(3, 65, 91, 0) 60%, rgba(15, 63, 84, 1)90%), url('../public/images/background.png');
+  height: 100vh;
+  scroll-snap-align: start;
+  z-index: 99;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.page2 {
+  height: 40vh;
+  scroll-snap-align: start;
+  overflow-y: scroll; 
+  position: absolute;
+  top: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000;
+  width: 100vw;
+}
+
+
+.page3 {
+  height: 80vh;
+  scroll-snap-align: start;
+  overflow-y: hidden; 
+  position: absolute;
+  top: 150vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100vw;
+  z-index: 1000;
 }

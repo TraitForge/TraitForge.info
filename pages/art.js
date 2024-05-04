@@ -1,12 +1,11 @@
-import styles from '@/styles/art.module.scss';
 
-const art = () => {
+const Art = () => {
 
     return (
-        <div className="pages">
-            <h1 className="text-5xl m7-6"> ART </h1>
+        <div className="flex flex-col justify-center">
+            <h1 className="text-5xl mt-4 m7-6"> ART </h1>
         </div>
     )
 }
 
-export default art
+export default Art;
