@@ -111,3 +111,15 @@ html::-webkit-scrollbar-thumb {
   z-index: 1000;
 }
 
+.page6 {
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow-y: hidden; 
+  position: absolute;
+  top: 350vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000;
+}
+

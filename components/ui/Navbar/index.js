@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
 import styles from './styles.module.scss';
 import { Logo } from '@/icons';
 import { useRouter } from 'next/router';
@@ -7,6 +8,24 @@ import { links, mediaLinks } from '@/lib/links';
 
 const Navbar = () => {
   const router = useRouter();
+
+  const handleScroll = (e, anchor) => {
+    e.preventDefault();
+    const element = document.getElementById(anchor);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    if (router.asPath.includes('#')) {
+      const anchor = router.asPath.substring(router.asPath.indexOf('#') + 1);
+      const element = document.getElementById(anchor);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [router.asPath]);
 
   return (
     <nav className="navbar flex text-white absolute top-0 w-full p-2">
@@ -17,16 +36,16 @@ const Navbar = () => {
         <div className="container flex justify-end mr-10 mt-1.5">
         <ul className="flex space-x-7 text-2xl list-none">
         {links.map((link, index) => (
-          <li key={index}>
-            {link.external ? (
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
-                {link.text}
-              </a>
-            ) : (
-              <Link href={link.url}>{link.text}</Link>
-            )}
-          </li>
-        ))}
+              <li key={index}>
+                {link.external ? (
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    {link.text}
+                  </a>
+                ) : (
+                  <a href={link.url} onClick={(e) => handleScroll(e, link.anchor)}>{link.text}</a>
+                )}
+              </li>
+            ))}
       </ul>
         </div>
         <div className="ml-2">

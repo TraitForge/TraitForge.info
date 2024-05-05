@@ -3,6 +3,7 @@ import Playnow from './playnow'
 import Art from './art';
 import TraitforgeIntro from './TraitforgeIntro';
 import Community from './community';
+import Gameplay from './gameplay';
 
 const Home = () => {
   return (
@@ -20,17 +21,20 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="page2" key="TraitforgeIntro">
+      <section className="page2" id="TraitforgeIntro">
       <Playnow/>
       </section>
-      <section className="page3" key="Playnow">
+      <section className="page3" id="Playnow">
       <TraitforgeIntro/>
       </section>
-      <section className="page4" key="Art">
+      <section className="page4" id="Art">
       <Art/>
       </section>
-      <section className="page5" key="Community">
+      <section className="page5" id="Community">
       <Community/>
+      </section>
+      <section className="page6" id="Gameplay">
+      <Gameplay/>
       </section>
     </div>
   );

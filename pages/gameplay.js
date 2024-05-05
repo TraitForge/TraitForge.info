@@ -3,8 +3,8 @@ import styles from '@/styles/gameplay.module.scss';
 const Gameplay = () => {
 
     return (
-        <div className='h-screen'>
-            <h1 className="text-5xl border flex justify-center items-center">GAME-PLAY</h1>
+        <div className='h-screen w-screen flex flex-col'>
+            <h1 className="headers text-6xl flex justify-center items-center">GAME-PLAY</h1>
             <div className={styles.mintContainer}>
             <h1 className="text-5xl my-6"> MINTING </h1>
             <p className="text-lg" >
