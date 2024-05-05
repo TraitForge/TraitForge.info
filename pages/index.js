@@ -1,12 +1,13 @@
 import React from 'react';
 import Playnow from './playnow'
-import TraitforgeIntro from './TraitforgeIntro';
 import Art from './art';
+import TraitforgeIntro from './TraitforgeIntro';
+import Community from './community';
 
 const Home = () => {
   return (
-    <div className="flex flex-col h-screen overflow-y-scroll">
-      <section className="page1 mb-screen" id="index">
+    <div className="flex flex-col overflow-y-scroll w-screen">
+      <section className="page1" id="index">
         <div className="absolute left-32 items-start justify-center">
           <div className="flex flex-col items-start">
             <h1 className="text-7xl mb-5">FORGE</h1>
@@ -24,6 +25,12 @@ const Home = () => {
       </section>
       <section className="page3" key="Playnow">
       <TraitforgeIntro/>
+      </section>
+      <section className="page4" key="Art">
+      <Art/>
+      </section>
+      <section className="page5" key="Community">
+      <Community/>
       </section>
     </div>
   );

@@ -9,11 +9,11 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="navbar text-white fixed top-0 w-full p-2">
+    <nav className="navbar flex text-white absolute top-0 w-full p-2">
       <Link href="/">
         <Logo />
       </Link>
-       <div className="container absolute right-5 top-6 flex justify-end">
+       <div className="container absolute right-5 flex justify-end">
         <div className="container flex justify-end mr-10 mt-1.5">
         <ul className="flex space-x-7 text-2xl list-none">
         {links.map((link, index) => (

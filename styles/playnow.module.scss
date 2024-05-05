@@ -1,0 +1,6 @@
+.playnowbutton {
+    cursor: crosshair;
+    &.hover {
+        transform: scale(1.05);
+      }
+}

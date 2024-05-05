@@ -1,23 +1,20 @@
-import Group from '../public/images/Group.png';
-import Group2 from '../public/images/Group2.png';
-import Group3 from '../public/images/Group3.png';
 
 const TraitforgeIntro = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full">
-      <h1 className="headers text-4xl mt-4 mb-8 m7-6"> WITH TRAITFORGE YOU CAN</h1>
-      <div className="flex flex-row w-9/12 items-center justify-center gap-40">
-        <div>
-          <img src={Group} alt='img' />
-          <p className="text-3xl text-center">Mint up to 10,000 distinct entities, each with its own unique traits and characteristics.</p>
+    <div className="flex flex-col justify-center items-center">
+      <h1 className="headers text-4xl mt-4 mb-12 flex justify-center"> WITH TRAITFORGE, YOU CAN:</h1>
+      <div className="flex flex-row mr-5 w-8/12 items-start justify-center">
+        <div className="flex justify-center items-center px-4 flex-col">
+        <object type="image/svg+xml" data="/images/Group1.svg" width="70" height="100"></object>
+        <p className="text-xl mt-5 text-center">Up to 10,000 distinct entities per Generation, each with their own unique traits and characteristics.</p>
         </div>
-        <div>
-          <img src={Group2} alt='img' />
-          <p className="text-3xl text-center">Explore endless possibilities in the evolution of your creations through nuking and forging.</p>
+        <div className="flex justify-center px-4 items-center flex-col">
+        <object type="image/svg+xml" data="/images/Group2.svg" width="70" height="100"></object>
+          <p className="text-xl mt-5 text-center">Explore endless possibilities of strategy through nuking and forging.</p>
         </div>
-        <div>
-          <img src={Group3} alt='img' />
-          <p className="text-3xl text-center">Connect with a vibrant community of creators and collectors on Twitter and Discord.</p>
+        <div className="flex justify-center px-5 items-center flex-col">
+        <object type="image/svg+xml" data="/images/Group3.svg" width="70" height="100"></object>
+          <p className="text-xl mt-5 text-center">Connect with a vibrant community of creators and collectors on Twitter and Discord.</p>
         </div>
       </div>
     </div>
