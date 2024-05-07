@@ -4,7 +4,7 @@ const Gameplay = () => {
 
     return (
         <div className='h-screen w-screen flex flex-col items-center'>
-            <h1 className="headers text-6xl" title="GAME-PLAY">GAME-PLAY</h1>
+            <h1 className="headers text-6xl">GAME-PLAY</h1>
             <div className={styles.mintContainer}>
             <h1 className="text-5xl my-6"> MINTING </h1>
             <div className="text-lg" >

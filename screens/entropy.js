@@ -2,7 +2,7 @@
 const Entropy = () => {
     return (
    <div className="flex flex-col justify-center items-center">
-     <h1 className="headers text-4xl mt-4 mb-12 flex flex-col justify-center" title="ENTROPY:">ENTROPY:</h1>
+     <h1 className="headers text-4xl mt-4 mb-12 flex flex-col justify-center">ENTROPY:</h1>
       <div className="text-center gap-5">
       <span className="m-5 text-3xl"> We use a process called token entropy to ensure each entity generated is completely unique. This process involves several steps: </span>
         <div className="text-center gap-5 mb-5">

@@ -1,10 +1,10 @@
 'use client'
 
 import React, { useEffect } from 'react';
-import Playnow from './playnow'
-import Art from './art';
-import TraitforgeIntro from './TraitforgeIntro';
-import Community from './community';
+import Playnow from '../screens/playnow'
+import Art from '../screens/art';
+import TraitforgeIntro from '../screens/TraitforgeIntro';
+import Community from '../screens/community';
 
 import { motion } from "framer-motion"
 
