@@ -5,8 +5,6 @@ import Playnow from './playnow'
 import Art from './art';
 import TraitforgeIntro from './TraitforgeIntro';
 import Community from './community';
-import Gameplay from './gameplay';
-import Entropy from './entropy';
 
 import { motion } from "framer-motion"
 
@@ -118,12 +116,6 @@ const Home = () => {
       </section>
       <section className="page5" id="Community">
       <Community/>
-      </section>
-      <section className="page6" id="Entropy">
-      <Entropy/>
-      </section>
-      <section className="page7" id="Gameplay">
-      <Gameplay/>
       </section>
     </div>
   );

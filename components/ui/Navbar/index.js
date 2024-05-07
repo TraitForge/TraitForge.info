@@ -36,16 +36,16 @@ const Navbar = () => {
         <div className="container flex justify-end mr-10 mt-1.5">
         <ul className="flex space-x-7 text-2xl list-none">
         {links.map((link, index) => (
-              <li key={index}>
-                {link.external ? (
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    {link.text}
-                  </a>
-                ) : (
-                  <a href={link.url} onClick={(e) => handleScroll(e, link.anchor)}>{link.text}</a>
-                )}
-              </li>
-            ))}
+          <li key={index}>
+           {link.external ? (
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
+               {link.text}
+             </a>
+          ) : (
+             <a href={link.url}>{link.text}</a>
+        )}
+          </li>
+         ))}
       </ul>
         </div>
         <div className="ml-2">
