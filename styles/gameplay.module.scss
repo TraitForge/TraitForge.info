@@ -1,26 +1,4 @@
-
-.mintContainer, .forgingContainer, .tradingContainer, .nukingContainer {
-    width: 40vw;
-    text-align: center;
-    position: absolute;
-}
-
-.mintContainer {
-    right: 10px;
-    top: 10vh; /* Adjust the top value as needed */
-}
-
-.forgingContainer {
-    left: 10px;
-    top: 28vh; /* Adjust the top value as needed */
-}
-
-.tradingContainer {
-    right: 10px;
-    top: 58vh; /* Adjust the top value as needed */
-}
-
-.nukingContainer {
-    left: 10px;
-    top: 68vh; /* Adjust the top value as needed */
+.page {
+    background-image: url('../public/images/gameplaybackground.png') center / cover no-repeat;
+    z-index: 1000;
 }
