@@ -22,8 +22,8 @@ const Art = () => {
             </svg>
         </div>
             </div>
-            <div className="flex w-6/12 content-center gap-1 rounded border justify-center">
-                <div className=" flex">
+            <div className="flex w-7/12 content-center gap-1 rounded border justify-center">
+                <div className="flex">
                     <img className={styles.image1} src="/images/forger1.jpeg" alt="Image 1" />
                 </div>
                 <div className=" flex flex-col w-11/12  gap-1 items-end">

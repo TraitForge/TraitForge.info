@@ -1,4 +1,7 @@
 .page {
-    background-image: url('../public/images/gameplaybackground.png') center / cover no-repeat;
+    background-image: linear-gradient(to bottom, rgba(3, 65, 91, 0) 5%, rgba(11, 46, 60, 1)18%), url('/images/gameplaybackground.png');
+    background-position: top;
+    background-repeat: no-repeat;
     z-index: 1000;
+    overflow: hidden;
 }

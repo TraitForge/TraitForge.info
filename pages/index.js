@@ -12,7 +12,7 @@ const Home = () => {
 
 
   return (
-    <div className="flex flex-col overflow-y-scroll w-screen">
+    <div className="flex flex-col overflow-x-hidden overflow-y-scroll w-screen">
       <section className="page1" id="index">
         <div className="absolute left-32 items-start justify-center">
         <motion.div
