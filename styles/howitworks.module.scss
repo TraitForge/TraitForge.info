@@ -1,0 +1,20 @@
+.page {
+    background-image: linear-gradient(to bottom, rgba(3, 65, 91, 0) 0%, rgba(11, 46, 60, 1) 10%), url('/images/howitworksbackground.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.end {
+    background-image: linear-gradient(to top, rgba(3, 65, 91, 0) 0%, rgba(11, 46, 60, 1) 30%), url('/images/howitworkscentre2.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.start {
+    background-image: linear-gradient(to bottom, rgba(3, 65, 91, 0) 0%, rgba(11, 46, 60, 1) 25%), url('/images/howitworkscentre1.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+  

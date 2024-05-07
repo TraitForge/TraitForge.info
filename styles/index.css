@@ -11,9 +11,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #0b2e3c;
+  background-color: rgba(11, 46, 60, 1);
   z-index: 0;
   color: white;
+  position: relative;
   font-family: 'Electrolize';
   overflow-x: hidden;
 }
@@ -42,7 +43,7 @@ html::-webkit-scrollbar-thumb {
 .footer {
   position: absolute;
   bottom: 0px;
-  visibility: hidden;
+  background-color: #02181E;
 }
 
 

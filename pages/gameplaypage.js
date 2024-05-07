@@ -1,30 +1,56 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../styles/gameplay.module.scss';
 
 import { motion } from "framer-motion"
 
 const GameplayPage = () => {
+
+  useEffect(() => {
+    const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    let intervals = [];
+
+    const runScrambleAnimation = (h1, index) => {
+      let iteration = 0;
+      clearInterval(intervals[index]);
+
+      intervals[index] = setInterval(() => {
+        h1.innerText = h1.dataset.value
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return h1.dataset.value[index];
+            }
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join("");
+
+        if (iteration >= h1.dataset.value.length) {
+          clearInterval(intervals[index]);
+        }
+
+        iteration += 1 / 3;
+      }, 60);
+    };
+
+    const h1Elements = document.querySelectorAll("h1");
+    h1Elements.forEach((h1, index) => {
+      runScrambleAnimation(h1, index);
+    });
+
+    return () => {
+      intervals.forEach((interval, index) => clearInterval(interval));
+    };
+  }, []);
+
   return (
-    <div className={`${styles.page} h-full w-screen flex flex-col items-center mb-20`}>
+    <div className={`${styles.page} h-full w-screen flex flex-col items-center mb-72`}>
       <div className=" mt-32 flex flex-col items-center">
-      <motion.h1
-        initial={{
-          opacity: 0,
-          scale: 0.8,
-        }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          transition: {
-            duration: 0.6,
-            delay: 0.6,
-            ease: "easeOut",
-          },
-        }}
+      <h1
+        data-value="GAMEPLAY"
         className="text-5xl mb-4"
       >
       GAMEPLAY
-      </motion.h1>
+      </h1>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

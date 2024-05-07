@@ -10,83 +10,69 @@ import { motion } from "framer-motion"
 
 const Home = () => {
 
+  useEffect(() => {
+    const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    let intervals = [];
+
+    const runScrambleAnimation = (h2, index) => {
+      let iteration = 0;
+      clearInterval(intervals[index]);
+
+      intervals[index] = setInterval(() => {
+        h2.innerText = h2.dataset.value
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return h2.dataset.value[index];
+            }
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join("");
+
+        if (iteration >= h2.dataset.value.length) {
+          clearInterval(intervals[index]);
+        }
+
+        iteration += 1 / 3;
+      }, 60);
+    };
+
+    const h2Elements = document.querySelectorAll("h2");
+    h2Elements.forEach((h2, index) => {
+      runScrambleAnimation(h2, index);
+    });
+
+    return () => {
+      intervals.forEach((interval, index) => clearInterval(interval));
+    };
+  }, []);
 
   return (
     <div className="flex flex-col overflow-x-hidden overflow-y-scroll w-screen">
       <section className="page1" id="index">
         <div className="absolute left-32 items-start justify-center">
-        <motion.div
-      initial={{
-        opacity: 0,
-        x: -10,
-        y: -10,
-      }}
-      animate={{
-        opacity: 1,
-        x: 0,
-        y: 0,
-        transition: {
-          duration: 1,
-          ease: "easeInOut",
-        },
-      }}
+        <div
       className="flex flex-col items-start"
     >
-      <motion.h1
-        initial={{
-          opacity: 0,
-          scale: 0.8,
-        }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          transition: {
-            duration: 0.6,
-            delay: 0.2,
-            ease: "easeOut",
-          },
-        }}
+      <h2
+        data-value="FORGE"
         className="text-7xl mb-5"
       >
         FORGE
-      </motion.h1>
-      <motion.h1
-        initial={{
-          opacity: 0,
-          scale: 0.8,
-        }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          transition: {
-            duration: 0.6,
-            delay: 0.4,
-            ease: "easeOut",
-          },
-        }}
+      </h2>
+      <h2
+        data-value="YOUR"
         className="text-7xl mb-5"
       >
         YOUR
-      </motion.h1>
-      <motion.h1
-        initial={{
-          opacity: 0,
-          scale: 0.8,
-        }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          transition: {
-            duration: 0.6,
-            delay: 0.6,
-            ease: "easeOut",
-          },
-        }}
+      </h2>
+      <h2
+        data-value="DESTINY"
         className="text-7xl mb-5"
       >
         DESTINY
-      </motion.h1>
-    </motion.div>
+      </h2>
+    </div>
     <div className="text-3xl">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
