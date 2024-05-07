@@ -14,7 +14,7 @@ const Playnow = () => {
             Unleash your creativity and dive into a realm where you can mint, 
             nuke, and forge unique entities from an expansive collection of possibilities.
             </div>
-            <object onClick={linkToGame} className={styles.playnowbutton} class="svg-buttons" type="image/svg+xml" data="/images/playnow.svg" width="300" height="150"></object>
+            <object onClick={linkToGame} className={styles.playnowbutton} type="image/svg+xml" data="/images/playnow.svg" width="300" height="150"></object>
         </div>
     )
 }

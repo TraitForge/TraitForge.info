@@ -37,13 +37,14 @@ html::-webkit-scrollbar-thumb {
 .navbar {
   background: rgba(0, 0, 0, 0.344);
   font-family: 'bebas neue';
-  z-index: 110;
+  z-index: 1100;
 }
 
 .footer {
   position: absolute;
   bottom: 0px;
   background-color: #02181E;
+  z-index: 1100;
 }
 
 
@@ -89,13 +90,14 @@ html::-webkit-scrollbar-thumb {
 .page4 {
   height: 100vh;
   scroll-snap-align: start;
-  overflow-y: hidden; 
+  overflow: hidden; 
   position: absolute;
   top: 200vh; 
   display: flex;
   justify-content: center; 
   align-items: center; 
   z-index: 1000;
+  width: 100vw;
 }
 
 .page5 {
@@ -115,11 +117,11 @@ html::-webkit-scrollbar-thumb {
 .btn {
   stroke:#fff;
   fill:#fff;
-  fill-opacity:0;
-  stroke-opacity:0;
-  z-index: 10000;
-  width: 100%;
-  height: auto;
+  fill-opacity:10;
+  stroke-opacity:100;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
 }
 
 .svg-buttons:hover {
