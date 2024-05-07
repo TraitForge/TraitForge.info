@@ -1,9 +1,51 @@
+'use client'
+
 import styles from '../styles/howitworks.module.scss';
+import React, { useEffect } from 'react';
+
 
 const GameMechanics = () => {
+
+  useEffect(() => {
+    const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    let intervals = [];
+
+    const runScrambleAnimation = (h2, index) => {
+      let iteration = 0;
+      clearInterval(intervals[index]);
+
+      intervals[index] = setInterval(() => {
+        h2.innerText = h2.dataset.value
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return h2.dataset.value[index];
+            }
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join("");
+
+        if (iteration >= h2.dataset.value.length) {
+          clearInterval(intervals[index]);
+        }
+
+        iteration += 1 / 3;
+      }, 60);
+    };
+
+    const h2Elements = document.querySelectorAll("h2");
+    h2Elements.forEach((h2, index) => {
+      runScrambleAnimation(h2, index);
+    });
+
+    return () => {
+      intervals.forEach((interval, index) => clearInterval(interval));
+    };
+  }, []);
+
     return (
    <div className={`${styles.page} h-full w-screen flex mb-72 flex-col items-center`}>
-    <h1 className="text-4xl mb-5 mt-32"> ENTROPY </h1>
+    <h2 className="text-4xl mb-5 mt-32" data-value="ENTROPY"> ENTROPY </h2>
     <p className="text-center text-m"> TraitForge uses a process called token entropy to ensure <br/> each entity generated is completely unique. This <br/>process involves several steps:</p>
     <div className={`${styles.end} mt-20 w-screen items-center justify-center`}>
         <div className="flex mb-16 flex-row items-center justify-center gap-6">

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react';
 import styles from '../styles/gameplay.module.scss';
 
@@ -9,22 +11,22 @@ const GameplayPage = () => {
     const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
     let intervals = [];
 
-    const runScrambleAnimation = (h1, index) => {
+    const runScrambleAnimation = (h2, index) => {
       let iteration = 0;
       clearInterval(intervals[index]);
 
       intervals[index] = setInterval(() => {
-        h1.innerText = h1.dataset.value
+        h2.innerText = h2.dataset.value
           .split("")
           .map((letter, index) => {
             if (index < iteration) {
-              return h1.dataset.value[index];
+              return h2.dataset.value[index];
             }
             return letters[Math.floor(Math.random() * letters.length)];
           })
           .join("");
 
-        if (iteration >= h1.dataset.value.length) {
+        if (iteration >= h2.dataset.value.length) {
           clearInterval(intervals[index]);
         }
 
@@ -32,9 +34,9 @@ const GameplayPage = () => {
       }, 60);
     };
 
-    const h1Elements = document.querySelectorAll("h1");
-    h1Elements.forEach((h1, index) => {
-      runScrambleAnimation(h1, index);
+    const h2Elements = document.querySelectorAll("h2");
+    h2Elements.forEach((h2, index) => {
+      runScrambleAnimation(h2, index);
     });
 
     return () => {
@@ -45,12 +47,12 @@ const GameplayPage = () => {
   return (
     <div className={`${styles.page} h-full w-screen flex flex-col items-center mb-72`}>
       <div className=" mt-32 flex flex-col items-center">
-      <h1
+      <h2
         data-value="GAMEPLAY"
         className="text-5xl mb-4"
       >
       GAMEPLAY
-      </h1>
+      </h2>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
