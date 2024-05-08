@@ -41,14 +41,13 @@ html::-webkit-scrollbar-thumb {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0px;
   background-color: #02181E;
   z-index: 1100;
   overflow: hidden;
 }
 
 .page1 {
+  position: relative;
   background-image: linear-gradient(to bottom, rgba(3, 65, 91, 0) 60%, rgba(11, 46, 60, 1)90%), url('../public/images/background.png');
   background-size: cover;
   width: 100vw;
@@ -63,11 +62,9 @@ html::-webkit-scrollbar-thumb {
 }
 
 .page2 {
+  position: relative;
   height: 50vh;
   scroll-snap-align: start;
-  overflow-y: scroll; 
-  position: absolute;
-  top: 100vh; 
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -76,11 +73,10 @@ html::-webkit-scrollbar-thumb {
 
 
 .page3 {
+  position: relative;
   height: 80vh;
   scroll-snap-align: start;
   overflow-y: hidden; 
-  position: absolute;
-  top: 140vh; 
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -88,11 +84,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 .page4 {
+  position: relative;
   height: 100vh;
   scroll-snap-align: start;
   overflow: hidden; 
-  position: absolute;
-  top: 200vh; 
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -101,13 +96,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 .page5 {
+  position: relative;
   background-image: url('../public/images/communitybackground.png');
   background-size: cover;
   height: 50vh;
   scroll-snap-align: start;
   overflow-y: hidden; 
-  position: absolute;
-  top: 300vh; 
   display: flex;
   justify-content: center; 
   align-items: center; 
