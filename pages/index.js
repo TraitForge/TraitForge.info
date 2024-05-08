@@ -48,7 +48,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="index flex flex-col overflow-x-hidden overflow-y-scroll w-screen">
+    <div className=" flex h-full flex-col overflow-x-hidden overflow-y-scroll w-screen">
       <section className="page1" id="index">
         <div className="absolute left-32 items-start justify-center">
         <div
@@ -91,18 +91,18 @@ const Home = () => {
       </div>
         </div>
       </section>
-      <section className="page2" id="TraitforgeIntro">
+      <div className="page2" id="TraitforgeIntro">
       <Playnow/>
-      </section>
-      <section className="page3" id="Playnow">
+      </div>
+      <div className="page3" id="Playnow">
       <TraitforgeIntro/>
-      </section>
-      <section className="page4" id="Art">
+      </div>
+      <div className="page4" id="Art">
       <Art/>
-      </section>
-      <section className="page5" id="Community">
+      </div>
+      <div className="page5" id="Community">
       <Community/>
-      </section>
+      </div>
     </div>
   );
 };
