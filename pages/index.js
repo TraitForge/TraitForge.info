@@ -48,7 +48,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col overflow-x-hidden overflow-y-scroll w-screen">
+    <div className="index flex flex-col overflow-x-hidden overflow-y-scroll w-screen">
       <section className="page1" id="index">
         <div className="absolute left-32 items-start justify-center">
         <div
@@ -88,7 +88,7 @@ const Home = () => {
       >
         Infinite Possibilities!
       </motion.p>
-    </div>
+      </div>
         </div>
       </section>
       <section className="page2" id="TraitforgeIntro">

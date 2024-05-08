@@ -2,7 +2,7 @@
 const Community = () => {
 
     return (
-        <div className="flex border flex-col justify-center items-center h-full w-screen relative">
+        <div className="flex flex-col justify-center items-center h-full w-screen relative">
             <h1 className="headers text-5xl my-6"> JOIN THE COMMUNITY </h1>
             <div className="text-3xl text-center w-6/12">
             Connect with us on Twitter and Discord to stay updated and engage with fellow creators and collectors.
