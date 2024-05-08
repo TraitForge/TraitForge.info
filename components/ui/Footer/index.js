@@ -1,4 +1,4 @@
-import { mediaLinks, links } from '@/lib/links'; 
+import { mediaLinks, docsLinks, links } from '@/lib/links'; 
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Logo } from '@/icons';
@@ -45,13 +45,18 @@ import Link from 'next/link';
                 </ul>
              </div>
 
-            <div className="flex flex-col">
-                <h1 className="mb-2 text-lg">ABOUT</h1>  
-                <h1 className="mb-2 text-sm">Contact Us</h1>  
-                <h1 className="mb-2 text-sm">FAQ</h1>  
-                <h1 className="mb-2 text-sm">Privacy Policy</h1>  
-                <h1 className="mb-2 text-sm">Terms of Service</h1>  
-             </div>
+          <ul className="flex text-m flex-col list-none">
+          <h1 className="mb-3 mt-1">ABOUT</h1>
+                {docsLinks.map((link, index) => (
+                <li key={index} className={link.url === router.pathname ? 'activeLink' : ''}>
+              <Link href={link.url} passHref>
+                <text target="_blank" rel="noopener noreferrer">
+                   {link.text}
+                </text>
+              </Link>
+             </li>
+               ))}
+          </ul>
             </div>
         </footer>
     );

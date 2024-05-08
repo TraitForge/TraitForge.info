@@ -48,7 +48,7 @@ const Navbar = () => {
          ))}
       </ul>
         </div>
-        <div className="ml-2">
+        <div className="m-1">
           <ul className="flex space-x-4 text-3xl list-none">
           {mediaLinks.map((link, index) => (
               <li key={index} className={link.url === router.pathname ? styles.activeLink : ''}>
