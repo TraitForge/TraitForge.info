@@ -42,7 +42,6 @@ html::-webkit-scrollbar-thumb {
 
 .footer {
   position: absolute;
-  bottom: 0px;
   background-color: #02181E;
   z-index: 1100;
   overflow: hidden;
