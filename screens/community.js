@@ -8,6 +8,7 @@ const Community = () => {
             Connect with us on Twitter and Discord to stay updated and engage with fellow creators and collectors.
             </div>
             <object className="svg-buttons" type="image/svg+xml" data="/images/joinnow.svg" width="300" height="100"></object>
+            <object className="overflow-x-hidden mt-10 bottom " type="image/svg+xml" data="/images/communitybottom.svg" width="1290" height="40"></object>
         </div>
     )
 }
