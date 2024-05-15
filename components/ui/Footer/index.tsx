@@ -30,11 +30,11 @@ const Footer = () => {
       </div>
 
       <div className="w-4/12 absolute right-10 gap-36 flex flex-row">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-start">
           <h1 className="mb-2 text-lg"> TRAITFORGE </h1>
           <ul className="flex gap-y-1 text-sm list-none text-center justify-center flex-col">
             {links.map((link, index) => (
-              <li key={index}>
+              <li key={index} className="whitespace-nowrap">
                 {link.external ? (
                   <Link
                     href={link.url}
@@ -51,24 +51,23 @@ const Footer = () => {
           </ul>
         </div>
 
-        <ul className="flex text-m flex-col list-none">
-          <h1 className="mb-3 mt-1">ABOUT</h1>
-          {docsLinks.map((link, index) => (
-            <li
-              key={index}
-              className={link.url === router.pathname ? "activeLink" : ""}
-            >
-              <Link
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                passHref
-              >
-                {link.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col justify-start">
+          <h1 className="mb-2 text-lg">ABOUT</h1>
+          <ul className="flex gap-y-1 text-sm list-none text-center justify-center flex-col">
+            {docsLinks.map((link, index) => (
+              <li key={index} className="whitespace-nowrap">
+                <Link
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  passHref
+                >
+                  {link.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </footer>
   );
