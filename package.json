@@ -24,6 +24,9 @@
     "sass": "^1.76.0"
   },
   "devDependencies": {
+    "@types/react": "^18.2.58",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "mini-css-extract-plugin": "^2.9.0",

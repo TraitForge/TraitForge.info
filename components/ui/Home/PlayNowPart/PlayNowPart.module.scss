@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  height: 50vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.button {
+  cursor: pointer;
+  height: 150px;
+
+  &.hover {
+    transform: scale(1.05);
+  }
+}
