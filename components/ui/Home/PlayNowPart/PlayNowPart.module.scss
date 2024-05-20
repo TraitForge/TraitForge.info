@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  height: 50vh;
+  min-height: 50vh;
   scroll-snap-align: start;
   display: flex;
   justify-content: center;

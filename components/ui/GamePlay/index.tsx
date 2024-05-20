@@ -45,9 +45,9 @@ const GamePlay = () => {
 
   return (
     <div
-      className={`${styles.container} h-full w-screen flex flex-col items-center mb-72`}
+      className={`${styles.container} h-full w-screen flex flex-col items-center mb-36`}
     >
-      <div className=" mt-32 flex flex-col items-center">
+      <div className="mt-32 flex flex-col items-center">
         <h2 data-value="GAMEPLAY" className="text-5xl mb-4">
           GAMEPLAY
         </h2>
@@ -55,12 +55,12 @@ const GamePlay = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-m text-center"
+          className="text-m text-center w-[360px]"
         >
-          Discover the Core Mechanics and Features that <br /> Define Your
-          Interactive Experience
+          Discover the Core Mechanics and Features that Define Your Interactive
+          Experience
         </motion.p>
-        <div className="gap-14 mt-40 flex flex-col items-center h-full">
+        <div className="gap-14 mt-40 flex flex-col items-center h-full p-4">
           <Image
             className="h-full"
             src="/images/frame1.svg"

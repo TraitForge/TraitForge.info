@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import styles from "./WelcomePart.module.scss";
+import clsx from "clsx";
 
 const WelcomePart = () => {
   useEffect(() => {
@@ -41,8 +42,11 @@ const WelcomePart = () => {
   }, []);
 
   return (
-    <section className={styles.container} id="welcome">
-      <div className="absolute left-32 items-start justify-center">
+    <section
+      className={clsx(styles.container, "justify-center sm:justify-start")}
+      id="welcome"
+    >
+      <div className="p-32 items-start justify-center">
         <div className="flex flex-col items-start">
           <h2 data-value="FORGE" className="text-7xl mb-5">
             FORGE

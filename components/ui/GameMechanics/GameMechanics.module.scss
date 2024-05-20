@@ -6,7 +6,6 @@
     ),
     url("/images/howitworksbackground.png");
   background-position: top;
-  background-repeat: no-repeat;
   z-index: 1000;
   overflow: hidden;
 }
@@ -18,7 +17,6 @@
       rgba(11, 46, 60, 1) 20%
     ),
     url("/images/howitworkscentre2.png");
-  background-repeat: no-repeat;
   background-position: bottom;
 }
 
@@ -29,6 +27,5 @@
       rgba(11, 46, 60, 1) 20%
     ),
     url("/images/howitworkscentre1.png");
-  background-repeat: no-repeat;
   background-position: top;
 }
