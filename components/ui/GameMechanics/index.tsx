@@ -102,7 +102,7 @@ const GameMechanics = () => {
       </div>
 
       <div className={`${styles.start} w-screen flex justify-center p-4`}>
-        <div className="w-full md:w-8/12 mt-10 flex flex-col justify-center gap-4 items-center sm:items-stretch">
+        <div className="w-full md:w-8/12 mt-10 flex flex-col justify-center gap-20 items-center sm:items-stretch">
           <div className="flex content-center justify-start">
             <Image
               src="/images/initialNukeFactor.svg"
