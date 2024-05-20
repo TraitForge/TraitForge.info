@@ -4,12 +4,11 @@ import styles from "./IntroPart.module.scss";
 const IntroPart = () => {
   return (
     <section className={styles.container} id="intro">
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="headers text-4xl mt-4 mb-12 flex justify-center">
-          {" "}
+      <div className="flex flex-col justify-center items-center p-2">
+        <h1 className="headers text-4xl mt-4 mb-12 text-center">
           WITH TRAITFORGE, YOU CAN:
         </h1>
-        <div className="flex flex-row mr-5 w-8/12 items-start justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 w-full md:w-8/12 items-start justify-center">
           <div className="flex justify-center items-center px-4 flex-col">
             <Image src="/images/Group1.svg" width={90} height={100} alt="" />
             <div className="text-xl mt-5 text-center">
