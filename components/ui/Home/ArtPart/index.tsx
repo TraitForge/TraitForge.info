@@ -18,23 +18,19 @@ const ArtPart = () => {
             for inspiration, <br /> our collection offers something for
             everyone.{" "}
           </div>
-          <Link href="/art">
-            <Image
-              className="svg-buttons mt-5"
-              src="/images/explore.svg"
-              alt=""
-              width="300"
-              height="100"
-            />
-          </Link>
         </div>
-        <Image
-          src="/images/artimages.svg"
-          width="400"
-          height="520"
-          alt=""
-          className="flex-1 p-2"
-        />
+        <div className="w-7/12 h-auto">
+      <svg
+        viewBox="0 0 500 520"
+        preserveAspectRatio="xMidYMid meet"
+        className="w-full h-auto"
+      >
+        <image href="/images/artimages.svg" width="500" height="520" />
+        <image href="/images/entity1.jpeg" x="14" y="96" width="328" height="328" />
+        <image href="/images/entity2.jpeg" x="319" y="97" width="174" height="164" />
+        <image href="/images/entity3.jpeg" x="318" y="260" width="174" height="164" />
+      </svg>
+    </div>
       </div>
     </section>
   );

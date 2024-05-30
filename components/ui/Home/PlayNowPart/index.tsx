@@ -18,14 +18,17 @@ const PlayNowPart = () => {
           nuke, and forge unique entities from an expansive collection of
           possibilities.
         </div>
-        <Image
-          src="/images/playnow.svg"
-          alt=""
-          width={300}
-          height={150}
-          className={styles.button}
-          onClick={linkToGame}
-        />
+        <svg
+         width="300"
+         height="150"
+         className={styles.button}
+         //onClick={linkToGame}
+         >
+      <image href="/images/playnow.svg" width="300" height="150" />
+      <text x="150" y="80" font-family="Electrolize" font-size="20" fill="white" text-anchor="middle" alignment-baseline="middle">
+        Play Now (Soon)
+      </text>
+    </svg>
       </div>
     </section>
   );

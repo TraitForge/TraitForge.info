@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./CommunityPart.module.scss";
+import Link from "next/link";
 
 const CommunityPart = () => {
   return (
@@ -13,6 +14,7 @@ const CommunityPart = () => {
           Connect with us on Twitter and Discord to stay updated and engage with
           fellow creators and collectors.
         </div>
+        <Link href="https://discord.gg/bbbTvuWSuF">
         <Image
           className="svg-buttons h-[100px]"
           src="/images/joinnow.svg"
@@ -20,6 +22,7 @@ const CommunityPart = () => {
           width="300"
           height="100"
         />
+        </Link>
       </div>
       <Image
         className="overflow-x-hidden mt-10 bottom "
