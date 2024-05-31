@@ -44,64 +44,65 @@ const GameMechanics = () => {
 
   return (
     <div
-      className={`${styles.container} h-full w-screen flex mb-72 flex-col items-center`}
+      className={`${styles.container} h-full w-screen flex mb-36 flex-col items-center p-2`}
     >
-      <h2 className="text-4xl mb-5 mt-32" data-value="ENTROPY">
-        {" "}
-        ENTROPY{" "}
+      <h2 className="text-4xl mb-5 mt-32 text-center" data-value="ENTROPY">
+        ENTROPY
       </h2>
       <p className="text-center text-m">
-        {" "}
-        TraitForge uses a process called token entropy to ensure <br /> each
-        entity generated is completely unique. This <br />
-        process involves several steps:
+        TraitForge uses a process called token entropy to ensure each entity
+        generated is completely unique. This process involves several steps:
       </p>
       <div
-        className={`${styles.end} mt-20 w-screen items-center justify-center`}
+        className={`${styles.end} mt-20 w-screen items-center justify-center p-4`}
       >
-        <div className="flex mb-16 flex-row items-center justify-center gap-6">
+        <div className="flex mb-16 flex-col md:flex-row items-center justify-center gap-6">
           <Image src="/images/entropy1.svg" alt="" width="100" height="100" />
           <Image
             src="/images/entropycontainer1.svg"
             alt=""
             width="600"
             height="190"
+            className="w-full md:w-auto"
           />
         </div>
 
-        <div className="flex mb-16 flex-row items-center justify-center gap-6">
+        <div className="flex mb-16 flex-col md:flex-row items-center justify-center gap-6">
           <Image src="/images/entropy2.svg" alt="" width="100" height="100" />
           <Image
             src="/images/entropycontainer2.svg"
             alt=""
             width="600"
             height="180"
+            className="w-full md:w-auto"
           />
         </div>
 
-        <div className="flex mb-16 flex-row items-center justify-center gap-6">
+        <div className="flex mb-16 flex-col md:flex-row items-center justify-center gap-6">
           <Image src="/images/entropy3.svg" alt="" width="100" height="100" />
           <Image
             src="/images/entropycontainer3.svg"
             alt=""
             width="600"
             height="160"
+            className="w-full md:w-auto"
           />
         </div>
 
-        <div className="flex mb-16 flex-row items-center justify-center gap-6">
+        <div className="flex mb-16 flex-col md:flex-row items-center justify-center gap-6">
           <Image src="/images/entropy4.svg" alt="" width="100" height="100" />
           <Image
             src="/images/entropycontainer4.svg"
             alt=""
             width="600"
             height="160"
+            className="w-full md:w-auto"
           />
         </div>
       </div>
 
-      <div className={`${styles.start} w-screen flex justify-center`}>
-        <div className="w-6/12 mt-10 flex flex-col justify-center">
+      <div className={`${styles.start} w-screen flex justify-center p-4`}>
+        <div className="w-full md:w-8/12 mt-10 flex flex-col justify-center gap-20 items-center sm:items-stretch">
           <div className="flex content-center justify-start">
             <Image
               src="/images/initialNukeFactor.svg"

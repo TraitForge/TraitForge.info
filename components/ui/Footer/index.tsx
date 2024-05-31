@@ -1,15 +1,12 @@
 import { mediaLinks, docsLinks, links } from "@/lib/links";
-import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Logo } from "@/icons";
 import Link from "next/link";
 
 const Footer = () => {
-  const router = useRouter();
-
   return (
-    <footer className="footer text-white flex flex-row text-center p-4 w-full">
-      <div className="flex flex-col w-3/12 items-center gap-10 justify-center">
+    <footer className="footer text-white flex flex-col sm:flex-row items-center sm:items-start justify-between text-center p-4 gap-8 w-full">
+      <div className="flex flex-col items-center gap-10 justify-center">
         <Logo />
         <div>
           <ul className="flex space-x-4 text-3xl list-none justify-center">
@@ -29,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-4/12 absolute right-10 gap-36 flex flex-row">
+      <div className="flex gap-8">
         <div className="flex flex-col justify-start">
           <h1 className="mb-2 text-lg"> TRAITFORGE </h1>
           <ul className="flex gap-y-1 text-sm list-none text-center justify-center flex-col">

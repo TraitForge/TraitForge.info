@@ -5,15 +5,11 @@ import Link from "next/link";
 const ArtPart = () => {
   return (
     <section className={styles.container} id="art">
-      <div className="flex flex-row content-center justify-center">
-        <div className="flex w-8/12 flex-col items-center text-center justify-center">
-          <div className="flex flex-row">
-            <h1 className="headers text-4xl mt-4 mb-6"> DISCOVER THE </h1>
-            <h1 className={`headers text-4xl ml-2 mt-4 mb-6 ${styles.span}`}>
-              {" "}
-              ART COLLECTION
-            </h1>
-          </div>
+      <div className="flex flex-col md:flex-row items-center justify-center p-2 gap-4">
+        <div className="flex flex-1 flex-col items-center text-center justify-center">
+          <h1 className="headers text-4xl mt-4 mb-6 text-center">
+            DISCOVER THE ART COLLECTION
+          </h1>
           <div className="w-10/12 mx-auto justify-center content-center">
             {" "}
             Explore our curated art collection and immerse yourself in a <br />{" "}
@@ -22,17 +18,19 @@ const ArtPart = () => {
             for inspiration, <br /> our collection offers something for
             everyone.{" "}
           </div>
-          <Link href="/art">
-            <Image
-              className="svg-buttons mt-5"
-              src="/images/explore.svg"
-              alt=""
-              width="300"
-              height="100"
-            />
-          </Link>
         </div>
-        <Image src="/images/artimages.svg" width="400" height="520" alt="" />
+        <div className="w-7/12 h-auto">
+      <svg
+        viewBox="0 0 500 520"
+        preserveAspectRatio="xMidYMid meet"
+        className="w-full h-auto"
+      >
+        <image href="/images/artimages.svg" width="500" height="520" />
+        <image href="/images/entity1.jpeg" x="14" y="96" width="328" height="328" />
+        <image href="/images/entity2.jpeg" x="319" y="97" width="174" height="164" />
+        <image href="/images/entity3.jpeg" x="318" y="260" width="174" height="164" />
+      </svg>
+    </div>
       </div>
     </section>
   );
