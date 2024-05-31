@@ -72,13 +72,14 @@ const GamePlay = () => {
          <image x="30" y="85" href="/images/dotsline.svg" width="200" height="20" />
          <text x="20" y="120" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
           <tspan x="30" dy="1.2em">10,000 "Gen 1" entities are available to mint. The first </tspan>
-          <tspan x="30" dy="1.2em">starts at 0.01 ETH and each subsequent one rises</tspan>
-          <tspan x="30" dy="1.2em">linearly by 0.01 ETH until the final is 100 ETH. In total if </tspan>
-          <tspan x="30" dy="1.2em">all are minted then 500,050 ETH is raised per</tspan>
+          <tspan x="30" dy="1.2em">starts at 0.005 ETH and each subsequent one rises</tspan>
+          <tspan x="30" dy="1.2em">linearly by 0.005 ETH until the final is 50 ETH. In total if </tspan>
+          <tspan x="30" dy="1.2em">all are minted then 250,025 ETH is raised per</tspan>
           <tspan x="30" dy="1.2em">generation. There are a total of 10 Generations, which</tspan>
           <tspan x="30" dy="1.2em">can be minted in parallel via a breeding mechanism. In</tspan>
           <tspan x="30" dy="1.2em">theory, 5m ETH could accrue to the central honeypot.</tspan>
          </text>
+         <image x="334" y="28" href="/images/homephone.png" width="260" height="260"/>
         </svg>
       </div>
 
@@ -101,6 +102,7 @@ const GamePlay = () => {
           <tspan x="240" dy="1.2em">merging runs out, then the next generation is minted</tspan>
           <tspan x="240" dy="1.2em">with the genesis entropy off-by-one.</tspan>
           </text>
+          <image x="2" y="28" href="/images/forgephone.png" width="260" height="260"/>
         </svg>
       </div>
 
@@ -120,6 +122,7 @@ const GamePlay = () => {
           <tspan x="30" dy="1.2em">Trading fee will be routed to the honeypot for extra game</tspan>
           <tspan x="30" dy="1.2em">economy.</tspan>
           </text>
+          <image x="332" y="28" href="/images/marketphone.png" width="260" height="260"/>
         </svg>
       </div>
 
@@ -142,6 +145,7 @@ const GamePlay = () => {
           <tspan x="240" dy="1.2em">claimed on nuke. The maximum total NukeFactor is 50%</tspan>
           <tspan x="240" dy="1.2em">- i.e. a "perfect" nuke.</tspan>
           </text>
+          <image x="5" y="28" href="/images/nukephone.png" width="260" height="260"/>
         </svg>
       </div>
         </div>
