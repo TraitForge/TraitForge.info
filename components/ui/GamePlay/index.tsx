@@ -77,7 +77,7 @@ const GamePlay = () => {
           <tspan x="30" dy="1.2em">all are minted then 250,025 ETH is raised per</tspan>
           <tspan x="30" dy="1.2em">generation. There are a total of 10 Generations, which</tspan>
           <tspan x="30" dy="1.2em">can be minted in parallel via a breeding mechanism. In</tspan>
-          <tspan x="30" dy="1.2em">theory, 5m ETH could accrue to the central honeypot.</tspan>
+          <tspan x="30" dy="1.2em">theory, 2.5m ETH could accrue to the central honeypot.</tspan>
          </text>
          <image x="334" y="28" href="/images/homephone.png" width="260" height="260"/>
         </svg>
