@@ -94,12 +94,12 @@ const GamePlay = () => {
          <image x="240" y="85" href="/images/boxline.svg" width="200" height="20" />
           <image href="/images/frame2.svg" width="600" height="290" />
           <text x="240" y="140" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="240" dy="1.2em">When a Merger merges with a Forger, their entropy is</tspan>
+          <tspan x="240" dy="1.2em">When a Merger forges with a Forger, their entropy is</tspan>
           <tspan x="240" dy="1.2em">averaged to produce the next generation entity. The </tspan>
-          <tspan x="240" dy="1.2em">crucial parameters are the "Nuke Factor", "Merge</tspan>
+          <tspan x="240" dy="1.2em">crucial parameters are the "Nuke Factor", "Forge</tspan>
           <tspan x="240" dy="1.2em">Potential" and "Performance Factor", which would be</tspan>
           <tspan x="240" dy="1.2em">halfway between the parameters of the parents. If </tspan>
-          <tspan x="240" dy="1.2em">merging runs out, then the next generation is minted</tspan>
+          <tspan x="240" dy="1.2em">Forging runs out, then the next generation is minted</tspan>
           <tspan x="240" dy="1.2em">with the genesis entropy off-by-one.</tspan>
           </text>
           <image x="2" y="28" href="/images/forgephone.png" width="260" height="260"/>
