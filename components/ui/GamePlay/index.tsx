@@ -77,7 +77,7 @@ const GamePlay = () => {
           <tspan x="30" dy="1.2em">all are minted then 250,025 ETH is raised per</tspan>
           <tspan x="30" dy="1.2em">generation. There are a total of 10 Generations, which</tspan>
           <tspan x="30" dy="1.2em">can be minted in parallel via a breeding mechanism. In</tspan>
-          <tspan x="30" dy="1.2em">theory, 2.5m ETH could accrue to the central honeypot.</tspan>
+          <tspan x="30" dy="1.2em">theory, 2.5m ETH could accrue to the central nuke-fund.</tspan>
          </text>
          <image x="334" y="28" href="/images/homephone.png" width="260" height="260"/>
         </svg>
@@ -119,7 +119,7 @@ const GamePlay = () => {
           <text x="30" y="140" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
           <tspan x="30" dy="1.2em">Entities can be traded via the 'Trading' page or traded</tspan>
           <tspan x="30" dy="1.2em">directly through a marketplace like opensea. 10% of the</tspan>
-          <tspan x="30" dy="1.2em">Trading fee will be routed to the honeypot for extra game</tspan>
+          <tspan x="30" dy="1.2em">Trading fee will be routed to the nuke-fund for extra game</tspan>
           <tspan x="30" dy="1.2em">economy.</tspan>
           </text>
           <image x="332" y="28" href="/images/marketphone.png" width="260" height="260"/>
@@ -145,7 +145,7 @@ const GamePlay = () => {
           <tspan x="240" dy="1.2em">claimed on nuke. The maximum total NukeFactor is 50%</tspan>
           <tspan x="240" dy="1.2em">- i.e. a "perfect" nuke.</tspan>
           </text>
-          <image x="5" y="28" href="/images/nukephone.png" width="260" height="260"/>
+          <image x="5" y="28" href="/images/nukeedited.png" width="260" height="260"/>
         </svg>
       </div>
         </div>
