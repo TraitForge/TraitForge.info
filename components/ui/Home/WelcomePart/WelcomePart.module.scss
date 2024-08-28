@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 65, 91, 0) 60%,
+      rgba(11, 46, 60, 1) 90%
+    ),
+    url("/images/background.png");
+  background-size: cover;
+  width: 100vw;
+  background-position: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  z-index: 99;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}

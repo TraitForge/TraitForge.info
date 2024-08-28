@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  min-height: 60vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 100vw;
+}

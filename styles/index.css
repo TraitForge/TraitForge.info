@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(11, 46, 60, 1);
+  z-index: 0;
+  color: white;
+  position: relative;
+  font-family: "Electrolize";
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  background-color: #09263263;
+  color: rgb(0, 255, 255);
+  width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 255, 255);
+  border-radius: 15px;
+}
+
+.headers {
+  font-family: "bebas neue";
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.344);
+  font-family: "bebas neue";
+  z-index: 1100;
+}
+
+.footer {
+  background-color: #02181e;
+  z-index: 1100;
+  overflow: hidden;
+}
+
+.btn {
+  stroke: #fff;
+  fill: #fff;
+  fill-opacity: 10;
+  stroke-opacity: 100;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+}
+
+.svg-buttons:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.phone1 {
+  box-shadow: 0px 0px 10px 10px #0ff;
+}
