@@ -9,8 +9,10 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'bebas-neue': ['Bebas Neue', ...defaultTheme.fontFamily.sans],
-      electrolize: ['Electrolize', ...defaultTheme.fontFamily.sans],
+      bebas: ['var(--font-bebas)'],
+      electrolize: ['var(--font-electrolize)'],
+      racesport: ['var(--font-racesport)'],
+      monsterrat: ['var(--font-monsterrat)'],
     },
     extend: {
       backgroundImage: {

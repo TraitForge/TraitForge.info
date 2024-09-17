@@ -1,16 +1,18 @@
 import Image from "next/image";
 import styles from "./ArtPart.module.scss";
-import Link from "next/link";
 
 const ArtPart = () => {
   return (
     <section className={styles.container} id="art">
-      <div className="flex flex-col md:flex-row items-center justify-center p-2 gap-4">
-        <div className="flex flex-1 flex-col items-center text-center justify-center">
-          <h1 className="headers text-4xl mt-4 mb-6 text-center">
-            DISCOVER THE ART COLLECTION
+      <div className="flex flex-col md:flex-row items-center justify-center p-2 gap-1 w-6/12">
+      <div className="w-auto h-auto">
+        <Image src="/images/Group104.png" alt="img" width="330" height="330" />
+        </div>
+        <div className="flex pl-6 flex-1 flex-col items-center text-center justify-center">
+          <h1 className="headers text-2xl mt-4 mb-6 text-start">
+            DISCOVER OUR ART <span className="headers bg-gradient-to-r from-[#057977] to-[#0ADFDB] bg-clip-text text-transparent">Collection</span>
           </h1>
-          <div className="w-10/12 mx-auto justify-center content-center">
+          <div className="text-start">
             {" "}
             Explore our curated art collection and immerse yourself in a <br />{" "}
             world of unique entities crafted by creators like you. <br />
@@ -19,18 +21,6 @@ const ArtPart = () => {
             everyone.{" "}
           </div>
         </div>
-        <div className="w-7/12 h-auto">
-      <svg
-        viewBox="0 0 500 520"
-        preserveAspectRatio="xMidYMid meet"
-        className="w-full h-auto"
-      >
-        <image href="/images/artimages.svg" width="500" height="520" />
-        <image href="/images/entity1.jpeg" x="14" y="96" width="328" height="328" />
-        <image href="/images/entity2.jpeg" x="319" y="97" width="174" height="164" />
-        <image href="/images/entity3.jpeg" x="318" y="260" width="174" height="164" />
-      </svg>
-    </div>
       </div>
     </section>
   );

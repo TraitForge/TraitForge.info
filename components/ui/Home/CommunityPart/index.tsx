@@ -1,36 +1,25 @@
-import Image from "next/image";
+import { Button } from "@/components/common/button/button";
 import styles from "./CommunityPart.module.scss";
-import Link from "next/link";
 
 const CommunityPart = () => {
   return (
     <section className={styles.container} id="community">
-      <div className="flex flex-col justify-center items-center h-full w-screen relative p-2">
-        <h1 className="headers text-5xl my-6 text-center">
+      <div className="flex flex-col justify-center items-start h-full w-10/12 relative p-2 pt-10">
+        <h1 className="headers text-3xl my-6 text-start">
           {" "}
           JOIN THE COMMUNITY{" "}
         </h1>
-        <div className="text-3xl text-center w-full md:w-6/12">
-          Connect with us on Twitter and Discord to stay updated and engage with
+        <div className="text-xl text-start w-full md:w-6/12 pb-5">
+          Connect with us on Twitter and Discord <br/>to stay updated and engage with<br/>
           fellow creators and collectors.
         </div>
-        <Link href="https://discord.gg/bbbTvuWSuF">
-        <Image
-          className="svg-buttons h-[100px]"
-          src="/images/joinnow.svg"
-          alt=""
-          width="300"
-          height="100"
+        <Button
+          onClick={() => window.open("https://discord.gg/NmvFyB4k", "_blank")}
+          variant="blue"
+          text="JOIN NOW!"
+          textClass="font-racesport rounded-[50px] text-sm w-[200px]"
         />
-        </Link>
       </div>
-      <Image
-        className="overflow-x-hidden mt-10 bottom "
-        src="/images/communitybottom.svg"
-        alt=""
-        width="1290"
-        height="40"
-      />
     </section>
   );
 };

@@ -2,7 +2,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(3, 65, 91, 0) 0%,
-      rgba(11, 46, 60, 1) 8%
+      rgba(2, 24, 30, 1) 8%
     ),
     url("/images/howitworksbackground.png");
   background-position: top;
@@ -10,15 +10,6 @@
   overflow: hidden;
 }
 
-.end {
-  background-image: linear-gradient(
-      to top,
-      rgba(3, 65, 91, 0) 0%,
-      rgba(11, 46, 60, 1) 20%
-    ),
-    url("/images/howitworkscentre2.png");
-  background-position: bottom;
-}
 
 .start {
   background-image: linear-gradient(

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "@/icons";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { links, mediaLinks } from "@/lib/links";
+import { links } from "@/lib/links";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
@@ -29,9 +29,9 @@ const Navbar = () => {
         <Logo />
       </Link>
 
-      <div className="container absolute right-5 flex items-center justify-end gap-8">
+      <div className="container absolute right-5 flex items-center justify-center gap-8">
         <div className="hidden lg:flex justify-end mr-10">
-          <ul className="flex space-x-7 text-2xl list-none">
+          <ul className="flex space-x-12 text-base list-none">
             {links.map((link, index) => (
               <li key={index}>
                 {link.external ? (
@@ -45,22 +45,6 @@ const Navbar = () => {
                 ) : (
                   <Link href={link.url}>{link.text}</Link>
                 )}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="hidden sm:flex">
-          <ul className="flex items-center gap-4 text-3xl list-none mt-1">
-            {mediaLinks.map((link, index) => (
-              <li key={index}>
-                <Link
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  passHref
-                >
-                  <FontAwesomeIcon icon={link.icon} />
-                </Link>
               </li>
             ))}
           </ul>
@@ -99,21 +83,6 @@ const Navbar = () => {
                   {link.text}
                 </Link>
               )}
-            </li>
-          ))}
-        </ul>
-        <ul className="flex items-center gap-4 text-3xl list-none mt-1">
-          {mediaLinks.map((link, index) => (
-            <li key={index}>
-              <Link
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                passHref
-                onClick={handleCloseMenu}
-              >
-                <FontAwesomeIcon icon={link.icon} />
-              </Link>
             </li>
           ))}
         </ul>

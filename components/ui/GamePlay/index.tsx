@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import styles from "./GamePlay.module.scss";
+import { BigCard } from "@/components/common/card/BigCard";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -47,110 +48,63 @@ const GamePlay = () => {
     <div
       className={`${styles.container} h-full w-screen flex flex-col items-center mb-36`}
     >
-      <div className="mt-32 w-10/12 flex flex-col items-center">
-        <h2 data-value="GAMEPLAY" className="text-5xl mb-4">
+      <div className="mt-24 w-10/12 flex flex-col items-center">
+        <h2 data-value="GAMEPLAY" className="headers bg-gradient-to-r from-[#057977] to-[#0ADFDB] bg-clip-text text-transparent text-5xl mb-5 mt-36 text-center">
           GAMEPLAY
         </h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-m text-center w-[360px]"
+          className="text-lg text-center w-[440px]"
         >
           Discover the Core Mechanics and Features that Define Your Interactive
           Experience
         </motion.p>
-        <div className="gap-14 mt-16 flex flex-col w-full items-center h-full p-5">
-      <div className="relative w-full h-full">
-        <svg
-           viewBox="0 0 600 290"
-           preserveAspectRatio="xMidYMid meet"
-           className="w-full h-auto"
-        >
-         <image href="/images/frame1.svg" width="600" height="290" />
-         <text x="30" y="60" font-family="Electrolize" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> MINTING </text>
-         <image x="30" y="85" href="/images/dotsline.svg" width="200" height="20" />
-         <text x="20" y="120" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="30" dy="1.2em">10,000 "Gen 1" entities are available to mint. The first </tspan>
-          <tspan x="30" dy="1.2em">starts at 0.005 ETH and each subsequent one rises</tspan>
-          <tspan x="30" dy="1.2em">linearly by 0.0000245 ETH until the final is 0.25 ETH.</tspan>
-          <tspan x="30" dy="1.2em">In total if all are minted then 1274.9 ETH is raised in</tspan>
-          <tspan x="30" dy="1.2em">the first generation. There are a total of 10 Generations,</tspan>
-          <tspan x="30" dy="1.2em">which can be minted in parallel via a breeding mechanism.</tspan>
-          <tspan x="30" dy="1.2em">Each generation, the mint price increment increases</tspan>
-          <tspan x="30" dy="1.2em">by 0.000005 ETH.</tspan>
-         </text>
-         <image x="334" y="28" href="/images/homephone.png" width="260" height="260"/>
-        </svg>
-      </div>
-
-
-      <div className="relative w-full h-full">
-        <svg
-           viewBox="0 0 600 290"
-           preserveAspectRatio="xMidYMid meet"
-           className="w-full h-auto"
-        >
-          <text x="240" y="60" font-family="Electrolize" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> FORGING </text>
-         <image x="240" y="85" href="/images/boxline.svg" width="200" height="20" />
-          <image href="/images/frame2.svg" width="600" height="290" />
-          <text x="240" y="140" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="240" dy="1.2em">When a Merger forges with a Forger, their entropy is</tspan>
-          <tspan x="240" dy="1.2em">averaged to produce the next generation entity. The </tspan>
-          <tspan x="240" dy="1.2em">crucial parameters are the "Nuke Factor", "Forge</tspan>
-          <tspan x="240" dy="1.2em">Potential" and "Performance Factor", which would be</tspan>
-          <tspan x="240" dy="1.2em">halfway between the parameters of the parents. If </tspan>
-          <tspan x="240" dy="1.2em">Forging runs out, then the next generation is minted</tspan>
-          <tspan x="240" dy="1.2em">with the genesis entropy off-by-one.</tspan>
-          </text>
-          <image x="2" y="28" href="/images/forgephone.png" width="260" height="260"/>
-        </svg>
-      </div>
-
-
-      <div className="relative w-full h-full">
-        <svg
-           viewBox="0 0 600 290"
-           preserveAspectRatio="xMidYMid meet"
-           className="w-full h-auto"
-        >
-          <text x="30" y="60" font-family="Electrolize" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> TRADING </text>
-         <image x="30" y="85" href="/images/tradingline.svg" width="200" height="20" />
-          <image href="/images/frame3.svg" width="600" height="290" />
-          <text x="30" y="140" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="30" dy="1.2em">Entities can be traded via the 'Trading' page or traded</tspan>
-          <tspan x="30" dy="1.2em">directly through a marketplace like opensea. 10% of the</tspan>
-          <tspan x="30" dy="1.2em">Trading fee will be routed to the nuke-fund for extra game</tspan>
-          <tspan x="30" dy="1.2em">economy.</tspan>
-          </text>
-          <image x="332" y="28" href="/images/marketphone.png" width="260" height="260"/>
-        </svg>
-      </div>
-
-
-      <div className="relative w-full h-full">
-        <svg
-           viewBox="0 0 600 290"
-           preserveAspectRatio="xMidYMid meet"
-           className="w-full h-auto"
-        >
-          <text x="240" y="60" font-family="Electrolize" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> NUKING </text>
-         <image x="240" y="85" href="/images/nukeline.svg" width="200" height="20" />
-          <image href="/images/frame4.svg" width="600" height="290" />
-          <text x="240" y="140" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="240" dy="1.2em">The Nuke Fund accumulates ETH from new mints and </tspan>
-          <tspan x="240" dy="1.2em">economic activity. After a 3-day maturity period, anyone</tspan>
-          <tspan x="240" dy="1.2em">can nuke their entity (forever burn) to claim a share of</tspan>
-          <tspan x="240" dy="1.2em">the ETH in the Fund. Every entity has a parameter set on</tspan>
-          <tspan x="240" dy="1.2em">mint which represents how much of the Fund can be</tspan>
-          <tspan x="240" dy="1.2em">claimed on nuke. The maximum total NukeFactor is 50%</tspan>
-          <tspan x="240" dy="1.2em">- i.e. a "perfect" nuke.</tspan>
-          </text>
-          <image x="5" y="28" href="/images/nukeedited.png" width="260" height="260"/>
-        </svg>
-      </div>
+        <div className="gap-14 mt-16 flex flex-col w-10/12 items-center h-full p-5">
+        <div className="border-[0.3px] w-10/12 border-[#057977] rounded-[20px] px-2 md:px-2 pt-4 pb-5 md:pt-4 bg-gradient-to-tr from-[#057977]/5 to-[#0ADFDB]/15 flex flex-row items-start justify-center h-full">
+            <div className="flex justify-between items-center flex-col w-8/12">
+              <div className="relative pt-1 md:pt-0 w-full">
+                <div className="hidden md:block top-1 w-full">
+                <svg width="507" height="40" viewBox="0 0 597 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 0.25H0.25V1.75H1V0.25ZM238.39 1L238.706 0.319776L238.555 0.25H238.39V1ZM320.214 39L319.898 39.6802L320.048 39.75H320.214V39ZM1 1.75H238.39V0.25H1V1.75ZM238.074 1.68022L319.898 39.6802L320.529 38.3198L238.706 0.319776L238.074 1.68022ZM320.214 39.75H597V38.25H320.214V39.75Z" fill="url(#paint0_linear_1558_6551)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_1558_6551" x1="-103.294" y1="-41.8827" x2="447.928" y2="294.784" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0ADFDB"/>
+                  <stop offset="1" stop-color="#14494C"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
+                </div>
+              </div>
+             <div className="text-start flex flex-col justify-center items-start pt-[20px] pb-[40px]">
+              <div className="w-5/12">
+               <h1 className="text-[40px] headers">MINTING</h1>
+               <img src="/images/dotsline.svg" alt="SVG Image" className="w-full h-auto pb-[20px]" />
+               </div>
+               <div className="w-10/12">
+                 TraitForge has 10 generations, with 10,000 entity’s within each generation.
+                 <br/>
+                 <br/>
+                 Each generation will have a base starting point of 0.005 ETH, with a maximum ETH price for the final entity unique to the generation.
+               </div>
+             </div>
+             <div className="hidden md:block top-1 w-full">
+             <svg width="507" height="40" viewBox="0 0 597 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 0.25H0.25V1.75H1V0.25ZM238.39 1L238.706 0.319776L238.555 0.25H238.39V1ZM320.214 39L319.898 39.6802L320.048 39.75H320.214V39ZM1 1.75H238.39V0.25H1V1.75ZM238.074 1.68022L319.898 39.6802L320.529 38.3198L238.706 0.319776L238.074 1.68022ZM320.214 39.75H597V38.25H320.214V39.75Z" fill="url(#paint0_linear_1558_6551)"/>
+              <defs>
+              <linearGradient id="paint0_linear_1558_6551" x1="-103.294" y1="-41.8827" x2="447.928" y2="294.784" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0ADFDB"/>
+              <stop offset="1" stop-color="#14494C"/>
+              </linearGradient>
+              </defs>
+              </svg>
+             </div>
+         </div>
+         <Image src="/images/mergercard.png" alt="img" width="230" height="200"/>
         </div>
       </div>
+    </div>
     </div>
   );
 };

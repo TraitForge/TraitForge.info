@@ -1,8 +1,4 @@
-import {
-  faDiscord,
-  faTwitter,
-  faTelegram,
-} from "@fortawesome/free-brands-svg-icons";
+import { TwitterLogo, DiscordLogo, TelegramLogo } from "@/icons";
 
 export const links = [
   { url: "/", text: "HOME" },
@@ -12,9 +8,9 @@ export const links = [
 ];
 
 export const mediaLinks = [
-  { url: "https://t.me/+b31jKqlV-1BjNzY1", icon: faTelegram },
-  { url: "https://twitter.com/TraitForge", icon: faTwitter },
-  { url: "https://discord.gg/KWHCEY6zFT", icon: faDiscord },
+  { url: "https://t.me/+b31jKqlV-1BjNzY1", icon: <TelegramLogo /> },
+  { url: "https://twitter.com/TraitForge", icon: <TwitterLogo /> },
+  { url: "https://discord.gg/NmvFyB4k", icon: <DiscordLogo /> },
 ];
 
 export const docsLinks = [
