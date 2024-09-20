@@ -68,9 +68,9 @@ const GamePlay = () => {
            className="w-full h-auto"
         >
          <image href="/images/frame1.svg" width="600" height="290" />
-         <text x="30" y="60" font-family="Electrolize" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> MINTING </text>
+         <text x="30" y="60" font-family="Racing" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> MINTING </text>
          <image x="30" y="85" href="/images/dotsline.svg" width="200" height="20" />
-         <text x="20" y="120" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
+         <text x="20" y="120" font-family="Racing" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
           <tspan x="30" dy="1.2em">10,000 "Gen 1" entities are available to mint. The first </tspan>
           <tspan x="30" dy="1.2em">starts at 0.005 ETH and each subsequent one rises</tspan>
           <tspan x="30" dy="1.2em">linearly by 0.0000245 ETH until the final is 0.25 ETH.</tspan>
@@ -91,10 +91,10 @@ const GamePlay = () => {
            preserveAspectRatio="xMidYMid meet"
            className="w-full h-auto"
         >
-          <text x="240" y="60" font-family="Electrolize" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> FORGING </text>
+          <text x="240" y="60" font-family="Racing" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> FORGING </text>
          <image x="240" y="85" href="/images/boxline.svg" width="200" height="20" />
           <image href="/images/frame2.svg" width="600" height="290" />
-          <text x="240" y="140" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
+          <text x="240" y="140" font-family="Racing" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
           <tspan x="240" dy="1.2em">When a Merger forges with a Forger, their entropy is</tspan>
           <tspan x="240" dy="1.2em">averaged to produce the next generation entity. The </tspan>
           <tspan x="240" dy="1.2em">crucial parameters are the "Nuke Factor", "Forge</tspan>
@@ -114,10 +114,10 @@ const GamePlay = () => {
            preserveAspectRatio="xMidYMid meet"
            className="w-full h-auto"
         >
-          <text x="30" y="60" font-family="Electrolize" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> TRADING </text>
+          <text x="30" y="60" font-family="Racing" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> TRADING </text>
          <image x="30" y="85" href="/images/tradingline.svg" width="200" height="20" />
           <image href="/images/frame3.svg" width="600" height="290" />
-          <text x="30" y="140" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
+          <text x="30" y="140" font-family="Racing" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
           <tspan x="30" dy="1.2em">Entities can be traded via the 'Trading' page or traded</tspan>
           <tspan x="30" dy="1.2em">directly through a marketplace like opensea. 10% of the</tspan>
           <tspan x="30" dy="1.2em">Trading fee will be routed to the nuke-fund for extra game</tspan>
@@ -134,10 +134,10 @@ const GamePlay = () => {
            preserveAspectRatio="xMidYMid meet"
            className="w-full h-auto"
         >
-          <text x="240" y="60" font-family="Electrolize" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> NUKING </text>
+          <text x="240" y="60" font-family="Racing" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> NUKING </text>
          <image x="240" y="85" href="/images/nukeline.svg" width="200" height="20" />
           <image href="/images/frame4.svg" width="600" height="290" />
-          <text x="240" y="140" font-family="Electrolize" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
+          <text x="240" y="140" font-family="Racing" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
           <tspan x="240" dy="1.2em">The Nuke Fund accumulates ETH from new mints and </tspan>
           <tspan x="240" dy="1.2em">economic activity. After a 3-day maturity period, anyone</tspan>
           <tspan x="240" dy="1.2em">can nuke their entity (forever burn) to claim a share of</tspan>

@@ -8,7 +8,7 @@ export const links = [
   { url: "/", text: "HOME" },
   { url: "/howitworks", text: "HOW IT WORKS" },
   { url: "/gameplay", text: "GAME PLAY" },
-  { url: "https://traitforge.game/", text: "PLAY NOW! (test-net)", external: true },
+  { url: "https://traitforge.game/", text: "PLAY NOW", external: true },
 ];
 
 export const mediaLinks = [
