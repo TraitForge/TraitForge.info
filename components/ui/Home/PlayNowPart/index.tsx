@@ -15,8 +15,8 @@ const PlayNowPart = () => {
           nuke, and forge unique entities from an expansive collection of
           possibilities.
         </div>
+        <div className="bg-[radial-gradient(ellipse_at_center,_rgba(33,102,226,.2)_0%,_rgba(33,102,226,0)_70%)] absolute top-0 -translate-x-1/4 -translate-y-1/4 left-0 w-[500px] h-[500px] z-0"></div>
       </div>
-      <div className="bg-[radial-gradient(ellipse_at_center,_rgba(53,255,231,.15)_0%,_rgba(53,255,231,0)_70%)] absolute top-4 right-10 w-[800px] h-[800px]"></div>
     </section>
   );
 };

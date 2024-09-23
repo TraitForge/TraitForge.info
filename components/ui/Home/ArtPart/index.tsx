@@ -4,8 +4,8 @@ import { NftCardThree } from "@/icons/NftCardThree";
 
 const ArtPart = () => {
   return (
-    <section className="container md:w-[70%] py-[250px]" id="art">
-      <div className="grid grid-cols-2">
+    <section className="  pb-[250px] relative" id="art">
+      <div className="grid grid-cols-2 container md:w-[70%]">
         <div className="relative h-[500px]">
           <NftCardOne  className="absolute right-[15%] top-[40%] " />
           <NftCardTwo className="absolute left-0 top-1/2 -translate-y-1/2" />
@@ -26,6 +26,8 @@ const ArtPart = () => {
           </div>
         </div>
       </div>
+      <div className="bg-[radial-gradient(ellipse_at_center,_rgba(53,255,231,.2)_0%,_rgba(33,102,226,0)_70%)] absolute bottom-0 left-0 -translate-x-1/4 w-[700px] h-[700px] z-0"></div>
+
     </section>
   );
 };

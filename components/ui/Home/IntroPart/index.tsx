@@ -6,8 +6,8 @@ import { Connection } from "@/icons/Connection";
 
 const IntroPart = () => {
   return (
-    <section id="intro">
-      <div className="flex flex-col justify-center items-center p-2">
+    <section id="intro" className="relative pb-[250px]">
+      <div className="flex flex-col justify-center items-center p-2 z-10">
         <h3 className="text-[48px] mb-24 text-center font-bold font-monserat">
           With to{" "}
           <span className="from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text">
@@ -30,6 +30,7 @@ const IntroPart = () => {
           />
         </div>
       </div>
+      <div className="bg-[radial-gradient(ellipse_at_center,_rgba(53,255,231,.2)_0%,_rgba(53,255,231,0)_70%)] absolute bottom-0 translate-y-1/4 right-10 w-[700px] h-[700px] z-0"></div>
     </section>
   );
 };
