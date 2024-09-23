@@ -5,10 +5,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export const links = [
-  { url: "/", text: "HOME" },
-  { url: "/howitworks", text: "HOW IT WORKS" },
-  { url: "/gameplay", text: "GAME PLAY" },
-  { url: "https://traitforge.game/", text: "PLAY NOW", external: true },
+  { url: "/", text: "Home" },
+  { url: "/howitworks", text: "How it works" },
+  { url: "/gameplay", text: "Game play" },
+  { url: "https://traitforge.game/", text: "Play now", external: true },
 ];
 
 export const mediaLinks = [

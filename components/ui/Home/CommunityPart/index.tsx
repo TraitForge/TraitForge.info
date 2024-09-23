@@ -1,36 +1,27 @@
-import Image from "next/image";
 import styles from "./CommunityPart.module.scss";
 import Link from "next/link";
 
 const CommunityPart = () => {
   return (
     <section className={styles.container} id="community">
-      <div className="flex flex-col justify-center items-center h-full w-screen relative p-2">
-        <h1 className="headers text-5xl my-6 text-center">
+      <div className="container md:w-[70%] mx-auto font-monserat flex flex-col h-full justify-center flex-1 items-start">
+        <h3 className="text-4xl text-left font-bold">
           {" "}
           JOIN THE COMMUNITY{" "}
-        </h1>
-        <div className="text-3xl text-center w-full md:w-6/12">
+        </h3>
+        <p className="text-xl text-left w-full py-10 md:w-4/12">
           Connect with us on Twitter and Discord to stay updated and engage with
           fellow creators and collectors.
-        </div>
-        <Link href="https://discord.gg/bbbTvuWSuF">
-        <Image
-          className="svg-buttons h-[100px]"
-          src="/images/joinnow.svg"
-          alt=""
-          width="300"
-          height="100"
-        />
+        </p>
+        <Link
+          href={"/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-20 py-6 bg-gradient-to-r from-[#057977] to-[#0ADFDB] rounded-full font-race"
+        >
+          JOIN NOW
         </Link>
       </div>
-      <Image
-        className="overflow-x-hidden mt-10 bottom "
-        src="/images/communitybottom.svg"
-        alt=""
-        width="1290"
-        height="40"
-      />
     </section>
   );
 };

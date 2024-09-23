@@ -1,36 +1,30 @@
-import Image from "next/image";
-import styles from "./ArtPart.module.scss";
-import Link from "next/link";
+import { NftCardOne } from "@/icons/NftCardOne";
+import { NftCardTwo } from "@/icons/NftCardTwo";
+import { NftCardThree } from "@/icons/NftCardThree";
 
 const ArtPart = () => {
   return (
-    <section className={styles.container} id="art">
-      <div className="flex flex-col md:flex-row items-center justify-center p-2 gap-4">
-        <div className="flex flex-1 flex-col items-center text-center justify-center">
-          <h1 className="headers text-4xl mt-4 mb-6 text-center">
-            DISCOVER THE ART COLLECTION
-          </h1>
-          <div className="w-10/12 mx-auto justify-center content-center">
-            {" "}
-            Explore our curated art collection and immerse yourself in a <br />{" "}
-            world of unique entities crafted by creators like you. <br />
-            Whether you're a collector seeking rare finds or an artist looking
-            for inspiration, <br /> our collection offers something for
-            everyone.{" "}
+    <section className="container md:w-[70%] py-[250px]" id="art">
+      <div className="grid grid-cols-2">
+        <div className="relative h-[500px]">
+          <NftCardOne  className="absolute right-[15%] top-[40%] " />
+          <NftCardTwo className="absolute left-0 top-1/2 -translate-y-1/2" />
+          <NftCardThree className="absolute left-1/2 -translate-x-1/2 top-10 -translate-y-10"/>
+        </div> 
+        <div className="flex flex-1 flex-col items-center text-center justify-center font-monserat w-8/12">
+          <h3 className="text-[48px] mb-8 text-left font-bold leading-none">
+            Discover Our Art{" "}
+            <span className="from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text">
+              Collection
+            </span>
+          </h3>
+          <div className="font-monserat text-left ">
+            Explore our curated art collection and immerse yourself in a world
+            of unique entities crafted by creators like you. Whether you're a
+            collector seeking rare finds or an artist looking for inspiration,
+            our collection offers something for everyone.
           </div>
         </div>
-        <div className="w-7/12 h-auto">
-      <svg
-        viewBox="0 0 500 520"
-        preserveAspectRatio="xMidYMid meet"
-        className="w-full h-auto"
-      >
-        <image href="/images/artimages.svg" width="500" height="520" />
-        <image href="/images/entity1.jpeg" x="14" y="96" width="328" height="328" />
-        <image href="/images/entity2.jpeg" x="319" y="97" width="174" height="164" />
-        <image href="/images/entity3.jpeg" x="318" y="260" width="174" height="164" />
-      </svg>
-    </div>
       </div>
     </section>
   );

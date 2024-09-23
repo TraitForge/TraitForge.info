@@ -1,35 +1,33 @@
-import Image from "next/image";
-import styles from "./IntroPart.module.scss";
+import { IntoItem } from "./IntoItem";
+
+import { Nft } from "@/icons/Nft";
+import { Mint } from "@/icons/Mint";
+import { Connection } from "@/icons/Connection";
 
 const IntroPart = () => {
   return (
-    <section className={styles.container} id="intro">
+    <section id="intro">
       <div className="flex flex-col justify-center items-center p-2">
-        <h1 className="headers text-4xl mt-4 mb-12 text-center">
-          WITH TRAITFORGE, YOU CAN:
-        </h1>
-        <div className="flex flex-col sm:flex-row gap-4 w-full md:w-8/12 items-start justify-center">
-          <div className="flex justify-center items-center px-4 flex-col">
-            <Image src="/images/Group1.svg" width={90} height={100} alt="" />
-            <div className="text-xl mt-5 text-center">
-              Up to 10,000 distinct entities per Generation, each with their own
-              unique traits and characteristics.
-            </div>
-          </div>
-          <div className="flex justify-center px-4 items-center flex-col">
-            <Image src="/images/Group2.svg" width={90} height={100} alt="" />
-            <div className="text-xl mt-5 text-center">
-              Explore endless possibilities of strategy through nuking and
-              forging.
-            </div>
-          </div>
-          <div className="flex justify-center px-5 items-center flex-col">
-            <Image src="/images/Group3.svg" width={90} height={100} alt="" />
-            <div className="text-xl mt-5 text-center">
-              Connect with a vibrant community of creators and collectors on
-              Twitter and Discord.
-            </div>
-          </div>
+        <h3 className="text-[48px] mb-24 text-center font-bold font-monserat">
+          With to{" "}
+          <span className="from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text">
+            TraitForge
+          </span>{" "}
+          you can
+        </h3>
+        <div className="grid grid-cols-3 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
+          <IntoItem
+            icon={<Nft />}
+            description="Mint up to 100,000 distinct entities, each with its own unique traits and characteristics."
+          />
+          <IntoItem
+            icon={<Mint />}
+            description="Explore endless possibilities in the evolution of your creations through nuking and forging."
+          />
+          <IntoItem
+            icon={<Connection />}
+            description="Connect with a vibrant community of creators and collectors on Twitter and Discord. "
+          />
         </div>
       </div>
     </section>

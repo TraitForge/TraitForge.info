@@ -19,13 +19,17 @@ module.exports = {
           DEFAULT: "1.25rem",
         },
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+
       colors: {
         primary: "#0ADFDB",
+        "light-blue": "rgba(20, 150, 130, 0.44)",
+        "light-dark": "rgba(0, 0, 0, 0)",
+      },
+      boxShadow: {
+        "custom-blue": "6px -4px 9.8px rgba(53, 255, 231, 0.41)",
+      },
+      backgroundImage: {
+        "radial-gradient": "radial-gradient(circle, #35FFE7 30%,  #000 10%)",
       },
     },
     screens: {
