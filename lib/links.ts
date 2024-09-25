@@ -6,8 +6,9 @@ import {
 
 export const links = [
   { url: "/", text: "Home" },
-  { url: "/howitworks", text: "How it works" },
   { url: "/gameplay", text: "Game play" },
+  { url: "/howitworks", text: "How it works" },
+  { url: "/referal", text: "Referal" },
   { url: "https://traitforge.game/", text: "Play now", external: true },
 ];
 

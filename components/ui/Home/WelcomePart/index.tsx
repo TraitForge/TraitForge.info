@@ -74,8 +74,9 @@ const WelcomePart = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
+            className="ml-2"
           >
-            Infinite Possibilities!
+           Infinite Possibilities!
           </motion.p>
         </div>
         <div className="flex gap-x-5 absolute bottom-5">

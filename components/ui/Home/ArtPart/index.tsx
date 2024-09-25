@@ -27,7 +27,6 @@ const ArtPart = () => {
         </div>
       </div>
       <div className="bg-[radial-gradient(ellipse_at_center,_rgba(53,255,231,.2)_0%,_rgba(33,102,226,0)_70%)] absolute bottom-0 left-0 -translate-x-1/4 w-[700px] h-[700px] z-0"></div>
-
     </section>
   );
 };

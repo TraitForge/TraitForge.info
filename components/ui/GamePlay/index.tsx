@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useEffect } from "react";
-import styles from "./GamePlay.module.scss";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Link from "next/link";
 
-const GamePlay = () => {
+import styles from "./GamePlay.module.scss";
+
+export const GamePlay = () => {
   useEffect(() => {
     const letters = "abcdefghijklmnopqrstuvwxyz".split("");
     let intervals = [];
@@ -44,115 +45,35 @@ const GamePlay = () => {
   }, []);
 
   return (
-    <div
-      className={`${styles.container} h-full w-screen flex flex-col items-center mb-36`}
+    <section
+      className={`${styles.container} flex  justify-center items-center h-[80vh] w-full`}
     >
-      <div className="mt-32 w-10/12 flex flex-col items-center">
-        <h2 data-value="GAMEPLAY" className="text-5xl mb-4">
+      <div className="w-5/12 mx-auto flex flex-col items-center">
+        <h2
+          data-value="GAMEPLAY"
+          className="text-[64px] mb-4 from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text font-race text-center"
+        >
           GAMEPLAY
         </h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-m text-center w-[360px]"
+          className="text-center font-monserat text-2xl"
         >
           Discover the Core Mechanics and Features that Define Your Interactive
           Experience
         </motion.p>
-        <div className="gap-14 mt-16 flex flex-col w-full items-center h-full p-5">
-      <div className="relative w-full h-full">
-        <svg
-           viewBox="0 0 600 290"
-           preserveAspectRatio="xMidYMid meet"
-           className="w-full h-auto"
+        <Link
+          href={"/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-10 py-6 bg-gradient-to-r from-[#057977] to-[#0ADFDB] mt-12 rounded-full font-race inline-block text-center"
         >
-         <image href="/images/frame1.svg" width="600" height="290" />
-         <text x="30" y="60" font-family="Racing" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> MINTING </text>
-         <image x="30" y="85" href="/images/dotsline.svg" width="200" height="20" />
-         <text x="20" y="120" font-family="Racing" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="30" dy="1.2em">10,000 "Gen 1" entities are available to mint. The first </tspan>
-          <tspan x="30" dy="1.2em">starts at 0.005 ETH and each subsequent one rises</tspan>
-          <tspan x="30" dy="1.2em">linearly by 0.0000245 ETH until the final is 0.25 ETH.</tspan>
-          <tspan x="30" dy="1.2em">In total if all are minted then 1274.9 ETH is raised in</tspan>
-          <tspan x="30" dy="1.2em">the first generation. There are a total of 10 Generations,</tspan>
-          <tspan x="30" dy="1.2em">which can be minted in parallel via a breeding mechanism.</tspan>
-          <tspan x="30" dy="1.2em">Each generation, the mint price increment increases</tspan>
-          <tspan x="30" dy="1.2em">by 0.000005 ETH.</tspan>
-         </text>
-         <image x="334" y="28" href="/images/homephone.png" width="260" height="260"/>
-        </svg>
+          Play Now (test-net)
+        </Link>
       </div>
-
-
-      <div className="relative w-full h-full">
-        <svg
-           viewBox="0 0 600 290"
-           preserveAspectRatio="xMidYMid meet"
-           className="w-full h-auto"
-        >
-          <text x="240" y="60" font-family="Racing" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> FORGING </text>
-         <image x="240" y="85" href="/images/boxline.svg" width="200" height="20" />
-          <image href="/images/frame2.svg" width="600" height="290" />
-          <text x="240" y="140" font-family="Racing" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="240" dy="1.2em">When a Merger forges with a Forger, their entropy is</tspan>
-          <tspan x="240" dy="1.2em">averaged to produce the next generation entity. The </tspan>
-          <tspan x="240" dy="1.2em">crucial parameters are the "Nuke Factor", "Forge</tspan>
-          <tspan x="240" dy="1.2em">Potential" and "Performance Factor", which would be</tspan>
-          <tspan x="240" dy="1.2em">halfway between the parameters of the parents. If </tspan>
-          <tspan x="240" dy="1.2em">Forging runs out, then the next generation is minted</tspan>
-          <tspan x="240" dy="1.2em">with the genesis entropy off-by-one.</tspan>
-          </text>
-          <image x="2" y="28" href="/images/forgephone.png" width="260" height="260"/>
-        </svg>
-      </div>
-
-
-      <div className="relative w-full h-full">
-        <svg
-           viewBox="0 0 600 290"
-           preserveAspectRatio="xMidYMid meet"
-           className="w-full h-auto"
-        >
-          <text x="30" y="60" font-family="Racing" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> TRADING </text>
-         <image x="30" y="85" href="/images/tradingline.svg" width="200" height="20" />
-          <image href="/images/frame3.svg" width="600" height="290" />
-          <text x="30" y="140" font-family="Racing" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="30" dy="1.2em">Entities can be traded via the 'Trading' page or traded</tspan>
-          <tspan x="30" dy="1.2em">directly through a marketplace like opensea. 10% of the</tspan>
-          <tspan x="30" dy="1.2em">Trading fee will be routed to the nuke-fund for extra game</tspan>
-          <tspan x="30" dy="1.2em">economy.</tspan>
-          </text>
-          <image x="332" y="28" href="/images/marketphone.png" width="260" height="260"/>
-        </svg>
-      </div>
-
-
-      <div className="relative w-full h-full">
-        <svg
-           viewBox="0 0 600 290"
-           preserveAspectRatio="xMidYMid meet"
-           className="w-full h-auto"
-        >
-          <text x="240" y="60" font-family="Racing" font-size="30" fill="white" text-anchor="start" alignment-baseline="middle"> NUKING </text>
-         <image x="240" y="85" href="/images/nukeline.svg" width="200" height="20" />
-          <image href="/images/frame4.svg" width="600" height="290" />
-          <text x="240" y="140" font-family="Racing" font-size="13" fill="white" text-anchor="start" alignment-baseline="middle">
-          <tspan x="240" dy="1.2em">The Nuke Fund accumulates ETH from new mints and </tspan>
-          <tspan x="240" dy="1.2em">economic activity. After a 3-day maturity period, anyone</tspan>
-          <tspan x="240" dy="1.2em">can nuke their entity (forever burn) to claim a share of</tspan>
-          <tspan x="240" dy="1.2em">the ETH in the Fund. Every entity has a parameter set on</tspan>
-          <tspan x="240" dy="1.2em">mint which represents how much of the Fund can be</tspan>
-          <tspan x="240" dy="1.2em">claimed on nuke. The maximum total NukeFactor is 50%</tspan>
-          <tspan x="240" dy="1.2em">- i.e. a "perfect" nuke.</tspan>
-          </text>
-          <image x="5" y="28" href="/images/nukeedited.png" width="260" height="260"/>
-        </svg>
-      </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 
-export default GamePlay;

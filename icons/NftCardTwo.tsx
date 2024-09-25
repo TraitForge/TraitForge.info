@@ -3,11 +3,12 @@ export const NftCardTwo = ({ className }: { className?: string }) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="251"
       height="369"
       fill="none"
       viewBox="0 0 251 369"
       className={className}
+      preserveAspectRatio="none"
+
     >
       <g filter="url(#filter0_dd_1555_6019)">
         <rect
