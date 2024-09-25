@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const StrategySection = () => {
   return (
-    <section className={`flex  justify-center items-center h-[80vh] w-full`}>
+    <section className={`flex  justify-center items-center h-[70vh] w-full`}>
       <div className="w-6/12 mx-auto flex flex-col items-center">
         <h3
           className="text-[64px] mb-4 from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text font-race text-center"
