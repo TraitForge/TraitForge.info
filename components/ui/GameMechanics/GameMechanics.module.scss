@@ -1,31 +1,13 @@
 .container {
   background-image: linear-gradient(
       to bottom,
-      rgba(3, 65, 91, 0) 0%,
-      rgba(11, 46, 60, 1) 8%
+      rgba(5, 39, 54, 0) 5%,
+      rgba(1, 24, 32, 1) 100%
     ),
     url("/images/howitworksbackground.png");
-  background-position: top;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1000;
   overflow: hidden;
-}
-
-.end {
-  background-image: linear-gradient(
-      to top,
-      rgba(3, 65, 91, 0) 0%,
-      rgba(11, 46, 60, 1) 20%
-    ),
-    url("/images/howitworkscentre2.png");
-  background-position: bottom;
-}
-
-.start {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(3, 65, 91, 0) 0%,
-      rgba(11, 46, 60, 1) 15%
-    ),
-    url("/images/howitworkscentre1.png");
-  background-position: top;
 }
