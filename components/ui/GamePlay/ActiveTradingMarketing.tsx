@@ -3,7 +3,7 @@ import Image from "next/image";
 export const ActiveTradingMarketing = () => {
   return (
     <section className="container mt-[100px] ">
-      <div className="relative border p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  gap-x-[70px]  grid grid-cols-12 w-11/12  ">
+      <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  gap-10 lg:gap-x-[70px]  grid grid-cols-12 lg:w-11/12  ">
         <div className="col-span-5 flex">
           <Image
             src="/images/left-mobile.png"
@@ -21,7 +21,7 @@ export const ActiveTradingMarketing = () => {
           />
         </div>
         <div className="col-span-7 flex flex-col justify-center">
-          <h3 className="text-[36px] font-race">
+          <h3 className="text-2xl lg:text-[36px] font-race">
             Active Trading and <span className="text-[#0EEB81] ">Market</span>{" "}
             Strategy
           </h3>

@@ -2,8 +2,8 @@ import { NftCardTwo } from "@/icons/NftCardTwo";
 
 export const MintingSection = () => {
   return (
-    <section className="container w-9/12 mx-auto">
-      <div className="relative border pl-5 xl:pl-9 pr-5 xl:pr-12 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md after:translate-y-full xl:gap-x-[70px] after:h-[101px] after:w-0.5 after:bg-primary after:absolute after:bottom-0 after:left-20 grid grid-cols-12">
+    <section className="container w-full lg:w-9/12 mx-auto">
+      <div className="relative border p-4 lg:p-8  bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md after:translate-y-full xl:gap-x-[70px] after:h-[101px] after:w-0.5 after:bg-primary after:absolute after:bottom-0 after:left-20 grid grid-cols-12">
         <div className="col-span-8 relative py-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"

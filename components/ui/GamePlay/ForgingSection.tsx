@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const ForgingSection = () => {
   return (
-    <section className="container w-9/12 flex justify-start mt-[100px]">
-      <div className="relative border px-9 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  w-10/12 grid grid-cols-12">
+    <section className="container w-full lg:w-9/12 flex justify-start mt-[100px]">
+      <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  lg::w-10/12 grid grid-cols-12">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100%"

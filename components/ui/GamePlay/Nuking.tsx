@@ -1,9 +1,8 @@
-import { NftTrading } from "@/icons/NftTrading";
 
 export const Nuking = () => {
   return (
-    <section className="container w-9/12 mx-auto mt-[100px]">
-      <div className="relative border pl-9 pr-12 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  after:-translate-y-1/2 xl:gap-x-[70px] after:h-3 after:w-3 after:rounded-full after:bg-primary after:absolute after:top-0 after:left-[75px] grid grid-cols-12">
+    <section className="container lg:w-9/12 mx-auto mt-[100px]">
+      <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  after:-translate-y-1/2 gap-5 xl:gap-x-[70px] after:h-3 after:w-3 after:rounded-full after:bg-primary after:absolute after:top-0 after:left-[75px] grid grid-cols-12">
         <div className="col-span-8 relative py-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +49,7 @@ export const Nuking = () => {
               d="M119.915 4.714h-3.719v10.693h3.719V4.714zM115.268 4.714h-3.719v10.693h3.719V4.714zM110.618 4.714h-3.719v10.693h3.719V4.714zM105.971 4.714h-3.719v10.693h3.719V4.714zM101.323 4.714h-3.72v10.693h3.72V4.714zM96.675 4.714h-3.719v10.693h3.72V4.714zM92.028 4.714h-3.72v10.693h3.72V4.714zM87.38 4.714h-3.719v10.693h3.72V4.714zM82.732 4.714h-3.719v10.693h3.72V4.714zM78.085 4.714h-3.719v10.693h3.719V4.714zM73.437 4.714h-3.719v10.693h3.72V4.714zM68.787 4.714H65.07v10.693h3.718V4.714zM64.14 4.714h-3.72v10.693h3.72V4.714zM59.492 4.714h-3.719v10.693h3.719V4.714zM54.844 4.714h-3.718v10.693h3.718V4.714zM50.197 4.714h-3.719v10.693h3.72V4.714zM45.55 4.714h-3.72v10.693h3.72V4.714zM40.902 4.714h-3.72v10.693h3.72V4.714zM36.254 4.714h-3.719v10.693h3.72V4.714zM31.607 4.714h-3.72v10.693h3.72V4.714zM26.957 4.714h-3.72v10.693h3.72V4.714zM22.31 4.714h-3.72v10.693h3.72V4.714zM17.662 4.714h-3.72v10.693h3.72V4.714zM13.014 4.714H9.295v10.693h3.72V4.714zM8.367 4.714h-3.72v10.693h3.72V4.714zM3.719 4.714H0v10.693h3.719V4.714zM124.828.944h-3.851v18.593h3.851V.944z"
             ></path>
           </svg>
-          <p className="font-monserat">
+          <p className="font-monserat text-sm">
             The Nuke Fund accumulates ETH from new mints and economic activity.
             After a 3-day maturity period, anyone can nuke their entity (forever
             burn) to claim a share of the ETH in the Fund. Every entity has a

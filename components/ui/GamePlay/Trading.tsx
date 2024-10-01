@@ -2,8 +2,8 @@ import { NftTrading } from "@/icons/NftTrading";
 
 export const Trading = () => {
   return (
-    <section className="container w-9/12 mx-auto mt-[100px]">
-      <div className="relative border pl-9 pr-12 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  grid grid-cols-12 after:translate-y-full xl:gap-x-[70px] after:h-[101px] after:w-0.5 after:bg-primary after:absolute after:bottom-0 after:left-20 ">
+    <section className="container lg:w-9/12 mx-auto mt-[100px]">
+      <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  grid grid-cols-12 after:translate-y-full gap-5 xl:gap-x-[70px] after:h-[101px] after:w-0.5 after:bg-primary after:absolute after:bottom-0 after:left-20 ">
         <div className="col-span-8 relative py-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"
