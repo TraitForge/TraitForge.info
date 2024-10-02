@@ -15,16 +15,19 @@ export const HowItWorks = () => {
             icon={<ShareIcon />}
             description="Distribute your unique referral code to players."
             title="Share Your Code"
+            bodyClasses="text-center text-base font-regular"
           />
           <IntoItem
             icon={<Hammer />}
             description="Players use your code when they mint new entities."
             title="Code Usage"
+            bodyClasses="text-center text-base font-regular"
           />
           <IntoItem
             icon={<Money />}
             description="The more players mint using your code, the higher your rewards."
             title="Earn Based on Mints"
+            bodyClasses="text-center text-base font-regular"
           />
         </div>
       </div>

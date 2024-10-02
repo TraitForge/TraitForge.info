@@ -19,14 +19,17 @@ const IntroPart = () => {
           <IntoItem
             icon={<Nft />}
             description="Mint up to 100,000 distinct entities, each with its own unique traits and characteristics."
+            bodyClasses="text-lg text-center font-semibold"
           />
           <IntoItem
             icon={<Mint />}
             description="Explore endless possibilities in the evolution of your creations through nuking and forging."
+            bodyClasses="text-lg text-center font-semibold"
           />
           <IntoItem
             icon={<Connection />}
             description="Connect with a vibrant community of creators and collectors on Twitter and Discord. "
+            bodyClasses="text-lg text-center font-semibold"
           />
         </div>
       </div>

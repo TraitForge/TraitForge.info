@@ -38,11 +38,12 @@ const Footer = () => {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="cursor-pointer"
                     >
                       {link.text}
                     </Link>
                   ) : (
-                    <Link href={link.url}>{link.text}</Link>
+                    <Link  className="cursor-pointer" href={link.url}>{link.text}</Link>
                   )}
                 </li>
               ))}
