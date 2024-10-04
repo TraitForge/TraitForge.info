@@ -50,7 +50,7 @@ const WelcomePart = () => {
       className={clsx(styles.container, "justify-center sm:justify-start")}
       id="welcome"
     >
-      <div className="items-start w-full justify-center container">
+      <div className="items-start w-full justify-center container ">
         <div className="flex flex-col items-start leading-none font-race">
           <h2 data-value="FORGE" className="text-5xl md:text-[90px]">
             FORGE
@@ -62,7 +62,7 @@ const WelcomePart = () => {
             DESTINY
           </h2>
         </div>
-        <div className="text-lg md:text-[28px] font-monserat flex max-md:flex-col font-medium mt-10">
+        <div className="text-lg md:text-[28px] font-monserat flex max-xl:flex-col font-medium mt-10">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ const WelcomePart = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
-            className="md:ml-2"
+            className="xl:ml-2"
           >
            Infinite Possibilities!
           </motion.p>
@@ -104,6 +104,7 @@ const WelcomePart = () => {
           fill="none"
           viewBox="0 0 587 551"
           className="absolute right-5 md:right-[64px] bottom-5 md:bottom-14"
+
         >
           <path
             stroke="url(#paint0_linear_1555_652)"

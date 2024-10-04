@@ -29,7 +29,7 @@ const Navbar = () => {
         <Link href="/" className="absolute left-0">
           <Logo />
         </Link>
-        <div className="flex justify-end md:justify-center gap-8 w-full py-7">
+        <div className="flex justify-end lg:justify-center gap-8 w-full py-7">
           <div className="hidden lg:flex">
             <ul className="flex items-center gap-x-10 text-sm  font-monserat font-semibold">
               {links.map((link, index) => (

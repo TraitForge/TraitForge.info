@@ -46,9 +46,9 @@ export const GameMechanics = () => {
   return (
     <>
       <section
-        className={`${styles.container} flex flex-col justify-center items-center h-[70vh] w-full container`}
+        className={`${styles.container} flex flex-col justify-center items-center h-[70vh] `}
       >
-        <div className="lg:w-5/12 lg:mx-auto flex flex-col items-center">
+        <div className="lg:w-5/12 lg:mx-auto flex flex-col items-center container">
           <h2
             data-value="how it works"
             className="text-5xl md:text-[64px] h-[100px] flex from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text uppercase font-race text-center"
@@ -66,8 +66,8 @@ export const GameMechanics = () => {
           </motion.p>
         </div>
       </section>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 container">
-        <div className="flex items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-5 container">
+        <div className="flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -218,7 +218,7 @@ export const GameMechanics = () => {
           </svg>
         </div>
         <div>
-          <div className="inline-flex mb-8 items-center border border-primary rounded-full bg-gradient-to-r to-light-blue from-light-dark border-light-blue">
+          <div className=" flex xl:inline-flex mb-8 items-center border border-primary rounded-full bg-gradient-to-r to-light-blue from-light-dark border-light-blue">
             <span className="font-race text-[30px]  from-[#308590] to-[#35FFE7] bg-gradient-to-r rounded-full w-[62px] h-[62px] flex justify-center items-center">
               <span className="leading-none"> 1</span>
             </span>
@@ -226,7 +226,7 @@ export const GameMechanics = () => {
               Entropy Generation
             </p>
           </div>
-          <div className="inline-flex mb-8 items-center border border-primary rounded-full bg-gradient-to-r to-light-blue from-light-dark border-light-blue">
+          <div className=" flex xl:inline-flex mb-8 items-center border border-primary rounded-full bg-gradient-to-r to-light-blue from-light-dark border-light-blue">
             <span className="font-race text-[30px] leading-none from-[#308590] to-[#35FFE7] bg-gradient-to-r rounded-full w-[62px] h-[62px] flex justify-center items-center">
               2
             </span>
@@ -234,7 +234,7 @@ export const GameMechanics = () => {
               Entropy indexing
             </p>
           </div>
-          <div className="inline-flex mb-8 items-center border border-primary rounded-full bg-gradient-to-r to-light-blue from-light-dark border-light-blue">
+          <div className=" flex xl:inline-flex mb-8 items-center border border-primary rounded-full bg-gradient-to-r to-light-blue from-light-dark border-light-blue">
             <span className="font-race text-[30px] leading-none from-[#308590] to-[#35FFE7] bg-gradient-to-r rounded-full w-[62px] h-[62px] flex justify-center items-center">
               3
             </span>
@@ -242,7 +242,7 @@ export const GameMechanics = () => {
               immutable slots
             </span>
           </div>
-          <div className="inline-flex items-center border border-primary rounded-full bg-gradient-to-r to-light-blue from-light-dark border-light-blue">
+          <div className=" flex xl:inline-flex items-center border border-primary rounded-full bg-gradient-to-r to-light-blue from-light-dark border-light-blue">
             <span className="font-race text-[30px] leading-none from-[#308590] to-[#35FFE7] bg-gradient-to-r rounded-full !w-[62px] h-[62px] flex justify-center items-center">
               4
             </span>

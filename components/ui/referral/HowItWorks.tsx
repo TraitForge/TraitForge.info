@@ -10,7 +10,7 @@ export const HowItWorks = () => {
         <h3 className="text-3xl md:text-5xl mb-24 text-center font-bold font-monserat">
           How It Works
         </h3>
-        <div className="grid grid-col-1 md:grid-cols-3 gap-y-5 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
+        <div className="grid grid-col-1 md:grid-cols-3 gap-y-5 md:gap-x-[15px] xl:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
           <IntoItem
             icon={<ShareIcon />}
             description="Distribute your unique referral code to players."

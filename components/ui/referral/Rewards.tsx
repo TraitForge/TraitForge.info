@@ -5,7 +5,7 @@ export const Rewards = () => {
         <h3 className="text-3xl md:text-5xl mb-24 text-center font-bold font-monserat">
           Rewards
         </h3>
-        <div className="grid grid-col-1 md:grid-cols-2 gap-y-5 lg:gap-x-[50px] container  mx-auto">
+        <div className="grid grid-col-1 md:grid-cols-2 gap-y-5 md:gap-x-[50px] container  mx-auto">
           <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  grid grid-cols-12">
             <svg
               xmlns="http://www.w3.org/2000/svg"

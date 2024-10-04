@@ -31,7 +31,7 @@ export const ForgingSection = () => {
             </linearGradient>
           </defs>
         </svg>
-        <div className="col-span-12 lg:col-span-8 relative py-24">
+        <div className="col-span-12 md:col-span-8 relative py-24">
           <h3 className="text-4xl text-white font-race uppercase">Forging</h3>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ export const ForgingSection = () => {
             putting itself on the market for merger entities to interact with. 
             a maximum ETH price for the final entity unique to the generation.
           </p>
-          <div className="lg:pr-20">
+          <div className="md:pr-20">
             <p className="font-monserat mt-9 font-bold">
               1. A forger lists itself with an ETH fee for the merger to pay.
             </p>
@@ -99,7 +99,7 @@ export const ForgingSection = () => {
           </svg>
         </div>
         <div className="col-span-12 md:col-span-4 py-14 relative">
-          <div className="grid grid-cols-4 lg:absolute lg:bottom-9 lg:right-0 lg:w-[120%]">
+          <div className="grid grid-cols-4 md:absolute md:bottom-9 md:right-0 md:w-[120%]">
             <Image
               src="/images/forge-one.png"
               width={400}

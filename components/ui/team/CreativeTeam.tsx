@@ -13,7 +13,7 @@ export const CreativeTeam = () => {
         and Journey as well as artist xxx
       </p>
       <div className="grid grid-cols-12 md:gap-x-8 container lg:px-20">
-        <div className="col-span-12 md:col-span-4 relative">
+        <div className="col-span-12 md:col-span-4 relative flex items-center">
           <Image src={"/images/team.png"} width={600} height={600} alt="jp thor image" />
         </div>
         <div className="col-span-12 md:col-span-8 flex flex-col gap-10 py-20">

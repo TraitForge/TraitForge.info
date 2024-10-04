@@ -3,24 +3,17 @@ import Image from "next/image";
 export const Strategic = () => {
   return (
     <section className="container mt-[100px] ">
-      <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md gap-10 lg:gap-x-[70px] grid grid-cols-12 lg:w-11/12  ">
-        <div className="col-span-12 md:col-span-5 flex relative max-lg:order-2">
+      <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md gap-10 lg:gap-x-[70px] grid grid-cols-12 lg:w-11/12 xl:w-9/12">
+        <div className="col-span-12 md:col-span-5 flex relative max-md:order-2">
           <Image
-            src="/images/left-mobile.png"
-            width={300}
-            height={300}
-            alt="forge card one"
-            className="object-contain h-full max-lg:max-h-[300px]"
-          />
-          <Image
-            src="/images/right-mobile.png"
+            src="/images/strategic.png"
             width={300}
             height={300}
             alt="forge card one"
             className="object-contain h-full max-lg:max-h-[300px]"
           />
         </div>
-        <div className="col-span-12 md:col-span-7 flex flex-col justify-center text-sm lg:text-base max-lg:order-1">
+        <div className="col-span-12 md:col-span-7 flex flex-col justify-center text-sm lg:text-base max-md:order-1">
           <h3 className="text-2xl lg:text-[36px] font-race">
             Strategic
             <span className="text-[#FD8D26] "> Long-Term</span> Forging

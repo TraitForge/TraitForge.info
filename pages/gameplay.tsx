@@ -22,10 +22,12 @@ const GamePlayPage = () => {
       <Trading />
       <Nuking />
       <StrategySection />
-      <ActiveTradingMarketing />
-      <MintAndNuke/>
-      <Strategic />
-      <MaximizingNukeValue />
+      <div className="w-10/12 mx-auto">
+        <ActiveTradingMarketing />
+        <MintAndNuke />
+        <Strategic />
+        <MaximizingNukeValue />
+      </div>
     </>
   );
 };
