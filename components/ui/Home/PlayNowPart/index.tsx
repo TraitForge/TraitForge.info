@@ -4,7 +4,7 @@ const PlayNowPart = () => {
   return (
     <section className={styles.container} id="playnow">
       <div className="flex flex-col justify-center items-center w-screen p-2 font-monserat relative">
-        <h3 className="text-[48px] mb-8 text-center font-bold">
+        <h3 className="text-4xl md:text-5xl mb-8 text-center font-bold">
           Welcome to{" "}
           <span className="from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text">
             TraitForge!

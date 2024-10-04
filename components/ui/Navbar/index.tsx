@@ -25,11 +25,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar  text-white absolute top-0 w-full">
-      <div className="container flex items-center relative">
+      <div className="container flex items-center justify-between relative">
         <Link href="/" className="absolute left-0">
           <Logo />
         </Link>
-        <div className="flex justify-center gap-8 w-full py-7">
+        <div className="flex justify-end md:justify-center gap-8 w-full py-7">
           <div className="hidden lg:flex">
             <ul className="flex items-center gap-x-10 text-sm  font-monserat font-semibold">
               {links.map((link, index) => (
@@ -55,7 +55,6 @@ const Navbar = () => {
             onClick={() => setShowMenu(true)}
           />
         </div>
-
         <div
           className={`${showMenu ? "flex" : "hidden"} lg:!hidden items-center justify-center flex-col gap-4 fixed w-full h-full top-0 left-0 bg-[rgb(11,46,60)] z-[2000]`}
         >
@@ -64,7 +63,6 @@ const Navbar = () => {
             className="absolute top-4 right-4 text-3xl cursor-pointer"
             onClick={handleCloseMenu}
           />
-
           <ul className="flex flex-col items-center gap-4 text-2xl list-none">
             {links.map((link, index) => (
               <li key={index}>

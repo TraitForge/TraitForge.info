@@ -2,9 +2,8 @@ import Image from "next/image";
 
 export const DescriptionSection = () => {
   return (
-    <section className="container relative pb-[140px]">
-      <Image src="/images/apocalypse.png" width={1000} height={800} alt="apocalypse image" className="w-full h-full object-cover" />
-      <div className="absolute left-12 right-12 top-1/2 -translate-y-1/2">
+    <section className="container relative mb-[140px] ">
+      <div className="z-10 py-28 relative">
         <h4 className="text-[32px] font-race">
           Year 2085: <br /> A Technological Apocalypse
         </h4>
@@ -21,6 +20,13 @@ export const DescriptionSection = () => {
           entities with valuable traits for survival.
         </p>
       </div>
+      <Image
+        src="/images/apocalypse.png"
+        width={1000}
+        height={800}
+        alt="apocalypse image"
+        className="w-full h-full object-cover absolute top-0 left-0 right-0 z-0 rounded-xl"
+      />
     </section>
   );
 };

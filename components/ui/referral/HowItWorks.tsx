@@ -5,12 +5,12 @@ import { Money } from "@/icons/Money";
 
 export const HowItWorks = () => {
   return (
-    <section id="intro" className="relative pb-[250px]">
+    <section className="relative pb-[150px] md:pb-[250px]">
       <div className="flex flex-col justify-center items-center p-2 z-10">
-        <h3 className="text-[48px] mb-24 text-center font-bold font-monserat">
+        <h3 className="text-3xl md:text-5xl mb-24 text-center font-bold font-monserat">
           How It Works
         </h3>
-        <div className="grid grid-cols-3 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
+        <div className="grid grid-col-1 md:grid-cols-3 gap-y-5 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
           <IntoItem
             icon={<ShareIcon />}
             description="Distribute your unique referral code to players."

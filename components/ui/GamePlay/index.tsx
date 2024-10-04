@@ -51,7 +51,7 @@ export const GamePlay = () => {
       <div className="lg:w-5/12 mx-auto flex flex-col items-center">
         <h2
           data-value="GAMEPLAY"
-          className="text-[64px] mb-4 from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text font-race text-center"
+          className="text-5xl md:text-[64px] mb-4 from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text font-race text-center"
         >
           GAMEPLAY
         </h2>

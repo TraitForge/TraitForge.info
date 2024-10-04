@@ -11,7 +11,7 @@ export const ReferralHero = () => {
       className={`${styles.container} flex  justify-center items-center h-[100vh] w-full`}
     >
       <div className="lg:w-7/12 mx-auto flex flex-col items-center px-10">
-        <h2 className="text-[64px] mb-4  font-race text-center h-[200px]">
+        <h2 className="text-5xl md:text-[64px] mb-4  font-race text-center h-[200px]">
           Forge Allies,{" "}
           <span className="from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text">
             Earn Rewards
@@ -21,7 +21,7 @@ export const ReferralHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-center font-monserat text-2xl px-10"
+          className="text-center font-monserat text-lg md:text-2xl md:px-10"
         >
           Join the TraitForge Referral Program and earn both short-term and
           long-term rewards by sharing your unique referral code with players.

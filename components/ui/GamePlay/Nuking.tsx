@@ -3,7 +3,7 @@ export const Nuking = () => {
   return (
     <section className="container lg:w-9/12 mx-auto mt-[100px]">
       <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  after:-translate-y-1/2 gap-5 xl:gap-x-[70px] after:h-3 after:w-3 after:rounded-full after:bg-primary after:absolute after:top-0 after:left-[75px] grid grid-cols-12">
-        <div className="col-span-8 relative py-24">
+        <div className="col-span-12 md:col-span-8 relative py-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -84,7 +84,7 @@ export const Nuking = () => {
             </defs>
           </svg>
         </div>
-        <div className="col-span-4 py-14 flex flex-col">
+        <div className="col-span-12 md:col-span-4 py-14 flex flex-col">
           <h4 className="text-[26px] font-monserat uppercase text-center mb-4">
             the honeypot
           </h4>

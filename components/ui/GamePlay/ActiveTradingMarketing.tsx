@@ -4,23 +4,23 @@ export const ActiveTradingMarketing = () => {
   return (
     <section className="container mt-[100px] ">
       <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  gap-10 lg:gap-x-[70px]  grid grid-cols-12 lg:w-11/12  ">
-        <div className="col-span-5 flex">
+        <div className="col-span-12 md:col-span-5 flex relative max-lg:order-2">
           <Image
             src="/images/left-mobile.png"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             alt="forge card one"
-            className="object-contain w-full h-full"
+            className="object-contain max-lg:max-h-[300px] h-full"
           />
           <Image
             src="/images/right-mobile.png"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             alt="forge card one"
-            className="object-contain w-full h-full"
+            className="object-contain max-lg:max-h-[300px] h-full"
           />
         </div>
-        <div className="col-span-7 flex flex-col justify-center">
+        <div className="col-span-12 md:col-span-7 flex flex-col justify-center max-lg:order-1">
           <h3 className="text-2xl lg:text-[36px] font-race">
             Active Trading and <span className="text-[#0EEB81] ">Market</span>{" "}
             Strategy

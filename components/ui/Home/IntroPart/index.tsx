@@ -6,16 +6,16 @@ import { Connection } from "@/icons/Connection";
 
 const IntroPart = () => {
   return (
-    <section id="intro" className="relative pb-[250px]">
+    <section id="intro" className="relative pb-[150px] md:pb-[250px]">
       <div className="flex flex-col justify-center items-center p-2 z-10">
-        <h3 className="text-[48px] mb-24 text-center font-bold font-monserat">
+        <h3 className="text-3xl md:text-5xl mb-24 text-center font-bold font-monserat">
           With to{" "}
           <span className="from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text">
             TraitForge
           </span>{" "}
           you can
         </h3>
-        <div className="grid grid-cols-3 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
+        <div className="grid grid-col-1 lg:grid-cols-3 gap-y-5 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
           <IntoItem
             icon={<Nft />}
             description="Mint up to 100,000 distinct entities, each with its own unique traits and characteristics."

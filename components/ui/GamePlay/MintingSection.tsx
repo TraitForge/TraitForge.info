@@ -4,7 +4,7 @@ export const MintingSection = () => {
   return (
     <section className="container w-full lg:w-9/12 mx-auto">
       <div className="relative border p-4 lg:p-8  bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md after:translate-y-full xl:gap-x-[70px] after:h-[101px] after:w-0.5 after:bg-primary after:absolute after:bottom-0 after:left-20 grid grid-cols-12">
-        <div className="col-span-8 relative py-24">
+        <div className="col-span-12 lg:col-span-8 relative py-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -88,7 +88,7 @@ export const MintingSection = () => {
             </defs>
           </svg>
         </div>
-        <div className="col-span-4 py-14">
+        <div className="col-span-12 lg:col-span-4 py-14">
           <NftCardTwo className="w-full h-full" />
         </div>
       </div>

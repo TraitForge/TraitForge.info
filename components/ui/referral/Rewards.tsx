@@ -1,11 +1,11 @@
 export const Rewards = () => {
   return (
-    <section id="intro" className="relative pb-[250px]">
+    <section className="relative pb-[150px] md:pb-[250px]">
       <div className="flex flex-col justify-center items-center p-2 z-10">
-        <h3 className="text-[48px] mb-24 text-center font-bold font-monserat">
+        <h3 className="text-3xl md:text-5xl mb-24 text-center font-bold font-monserat">
           Rewards
         </h3>
-        <div className="grid grid-cols-2 lg:gap-x-[50px] container  mx-auto">
+        <div className="grid grid-col-1 md:grid-cols-2 gap-y-5 lg:gap-x-[50px] container  mx-auto">
           <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  grid grid-cols-12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +48,8 @@ export const Rewards = () => {
                 height="263"
                 fill="none"
                 viewBox="0 0 194 263"
+                preserveAspectRatio="none"
+                className="w-full"
               >
                 <g opacity="0.8">
                   <g opacity="0.6">
@@ -150,6 +152,8 @@ export const Rewards = () => {
                 height="244"
                 fill="none"
                 viewBox="0 0 244 244"
+                preserveAspectRatio="none"
+                className="w-full"
               >
                 <g opacity="0.8">
                   <path

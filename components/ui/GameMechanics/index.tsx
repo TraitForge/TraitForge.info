@@ -46,12 +46,12 @@ export const GameMechanics = () => {
   return (
     <>
       <section
-        className={`${styles.container} flex flex-col justify-center items-center h-[70vh] w-full`}
+        className={`${styles.container} flex flex-col justify-center items-center h-[70vh] w-full container`}
       >
-        <div className="lg:w-5/12 mx-auto flex flex-col items-center">
+        <div className="lg:w-5/12 lg:mx-auto flex flex-col items-center">
           <h2
             data-value="how it works"
-            className="text-[64px] h-[100px] flex from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text uppercase font-race text-center"
+            className="text-5xl md:text-[64px] h-[100px] flex from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text uppercase font-race text-center"
           >
             how it works
           </h2>
@@ -59,14 +59,14 @@ export const GameMechanics = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-center font-monserat text-2xl"
+            className="text-center font-monserat text-xl md:text-2xl"
           >
             We use a process called token entropy to ensure each entity
             generated is completely unique. This process involves several steps:
           </motion.p>
         </div>
       </section>
-      <div className="grid grid-cols-2 gap-x-5 container">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 container">
         <div className="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +222,7 @@ export const GameMechanics = () => {
             <span className="font-race text-[30px]  from-[#308590] to-[#35FFE7] bg-gradient-to-r rounded-full w-[62px] h-[62px] flex justify-center items-center">
               <span className="leading-none"> 1</span>
             </span>
-            <p className="font-bold text-[22px] uppercase px-6">
+            <p className="font-bold text-sm md:text-[22px] uppercase px-2 md:px-6">
               Entropy Generation
             </p>
           </div>
@@ -230,7 +230,7 @@ export const GameMechanics = () => {
             <span className="font-race text-[30px] leading-none from-[#308590] to-[#35FFE7] bg-gradient-to-r rounded-full w-[62px] h-[62px] flex justify-center items-center">
               2
             </span>
-            <p className="font-bold text-[22px] uppercase px-6">
+            <p className="font-bold text-sm md:text-[22px] uppercase px-2 md:px-6">
               Entropy indexing
             </p>
           </div>
@@ -238,7 +238,7 @@ export const GameMechanics = () => {
             <span className="font-race text-[30px] leading-none from-[#308590] to-[#35FFE7] bg-gradient-to-r rounded-full w-[62px] h-[62px] flex justify-center items-center">
               3
             </span>
-            <span className="font-bold text-[22px] uppercase px-6">
+            <span className="font-bold text-sm md:text-[22px] uppercase px-6">
               immutable slots
             </span>
           </div>
@@ -246,7 +246,7 @@ export const GameMechanics = () => {
             <span className="font-race text-[30px] leading-none from-[#308590] to-[#35FFE7] bg-gradient-to-r rounded-full !w-[62px] h-[62px] flex justify-center items-center">
               4
             </span>
-            <span className="font-bold text-[22px] uppercase px-6">
+            <span className="font-bold text-sm md:text-[22px] uppercase px-2 md:px-6">
               Entity parameters derivation
             </span>
           </div>

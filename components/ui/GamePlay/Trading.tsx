@@ -4,7 +4,7 @@ export const Trading = () => {
   return (
     <section className="container lg:w-9/12 mx-auto mt-[100px]">
       <div className="relative border p-4 lg:p-8 bg-gradient-to-tr to-light-blue from-light-dark border-light-blue rounded-md  grid grid-cols-12 after:translate-y-full gap-5 xl:gap-x-[70px] after:h-[101px] after:w-0.5 after:bg-primary after:absolute after:bottom-0 after:left-20 ">
-        <div className="col-span-8 relative py-24">
+        <div className="col-span-12 md:col-span-8 relative py-24">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -82,7 +82,7 @@ export const Trading = () => {
             </defs>
           </svg>
         </div>
-        <div className="col-span-4 py-14">
+        <div className="col-span-12 md:col-span-4 py-14">
           <NftTrading className="w-full h-full" />
         </div>
       </div>

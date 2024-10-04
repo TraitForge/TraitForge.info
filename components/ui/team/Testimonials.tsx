@@ -2,12 +2,12 @@ import { TestimonialItem } from "./TestimonialItem";
 
 export const Testimonials = () => {
   return (
-    <section id="intro" className="relative pb-[250px]">
+    <section className="relative pb-[150px] md:pb-[250px]">
       <div className="flex flex-col justify-center items-center p-2 z-10">
         <h3 className="text-[32px] mb-24 text-center font-bold font-monserat">
           What the Developers & Players Say
         </h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
           <TestimonialItem
             description={` <p>
             TraitForge is an absolutely insane NFT strategy game that

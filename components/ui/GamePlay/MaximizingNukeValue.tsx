@@ -4,7 +4,7 @@ export const MaximizingNukeValue = () => {
   return (
     <section className="container my-[100px]">
       <div className="relative border p-4 lg:p-8 bg-gradient-to-tr ml-auto to-light-blue from-light-dark border-light-blue rounded-md gap-5 lg:gap-x-[70px] grid grid-cols-12 lg:w-11/12  ">
-        <div className="col-span-7 flex flex-col justify-center text-sm lg:text-base">
+        <div className="col-span-12 md:col-span-7 flex flex-col justify-center text-sm lg:text-base">
           <h3 className="text-2xl lg:text-[36px] font-race">
             Maximizing <span className="text-[#FC62FF] "> Nuke Value </span>{" "}
             Through Aging
@@ -22,20 +22,20 @@ export const MaximizingNukeValue = () => {
             more in maximizing returns from the nuke mechanism.
           </p>
         </div>
-        <div className="col-span-5 flex relative max-lg:max-h-[300px]">
+        <div className="col-span-12 md:col-span-5 flex relative ">
           <Image
             src="/images/left-mobile.png"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             alt="forge card one"
-            className="object-contain w-full h-full"
+            className="object-contain max-lg:max-h-[300px] h-full"
           />
           <Image
             src="/images/right-mobile.png"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             alt="forge card one"
-            className="object-contain w-full h-full"
+            className="object-contain max-lg:max-h-[300px] h-full"
           />
         </div>
       </div>

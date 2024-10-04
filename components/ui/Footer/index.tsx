@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex gap-8 w-full justify-center">
           <div className="flex flex-col justify-start">
             <h1 className="mb-2 text-xl text-left">TraitForge</h1>
             <ul className="flex gap-y-1 text-sm list-none text-left justify-center flex-col">
@@ -43,7 +43,9 @@ const Footer = () => {
                       {link.text}
                     </Link>
                   ) : (
-                    <Link  className="cursor-pointer" href={link.url}>{link.text}</Link>
+                    <Link className="cursor-pointer" href={link.url}>
+                      {link.text}
+                    </Link>
                   )}
                 </li>
               ))}

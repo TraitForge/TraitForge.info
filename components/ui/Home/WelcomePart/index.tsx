@@ -52,17 +52,17 @@ const WelcomePart = () => {
     >
       <div className="items-start w-full justify-center container">
         <div className="flex flex-col items-start leading-none font-race">
-          <h2 data-value="FORGE" className="text-[90px]">
+          <h2 data-value="FORGE" className="text-5xl md:text-[90px]">
             FORGE
           </h2>
-          <h2 data-value="YOUR" className="text-[90px]">
+          <h2 data-value="YOUR" className="text-5xl md:text-[90px]">
             YOUR
           </h2>
-          <h2 data-value="DESTINY" className="text-[90px]">
+          <h2 data-value="DESTINY" className="text-5xl md:text-[90px]">
             DESTINY
           </h2>
         </div>
-        <div className="text-[28px] font-monserat flex font-medium mt-10">
+        <div className="text-lg md:text-[28px] font-monserat flex max-md:flex-col font-medium mt-10">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -74,12 +74,12 @@ const WelcomePart = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
-            className="ml-2"
+            className="md:ml-2"
           >
            Infinite Possibilities!
           </motion.p>
         </div>
-        <div className="flex gap-x-5 absolute bottom-5">
+        <div className="flex max-md:flex-col gap-5 absolute bottom-10 md:bottom-5">
           <Link
             href={"/"}
             target="_blank"
@@ -103,7 +103,7 @@ const WelcomePart = () => {
           height="551"
           fill="none"
           viewBox="0 0 587 551"
-          className="absolute right-[64px] bottom-14"
+          className="absolute right-5 md:right-[64px] bottom-5 md:bottom-14"
         >
           <path
             stroke="url(#paint0_linear_1555_652)"
@@ -123,7 +123,7 @@ const WelcomePart = () => {
             </linearGradient>
           </defs>
         </svg>
-        <ul className="flex items-center flex-col gap-4  list-none absolute top-10 right-[54px]">
+        <ul className="flex items-center flex-col gap-4  list-none absolute top-28 md:top-10 right-3 md:right-[54px]">
           {mediaLinks.map((link, index) => (
             <li key={index} className="hover:bg-primary bg-opacity-30 rounded-md">
               <Link

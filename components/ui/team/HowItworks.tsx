@@ -2,8 +2,8 @@ import { IntoItem } from "../Home/IntroPart/IntoItem";
 
 export const HowItWorks = () => {
   return (
-    <section id="intro" className="relative pb-[250px]">
-      <h3 className="text-[48px] mb-10 text-center font-bold font-monserat">
+    <section className="relative pb-[250px]">
+      <h3 className="text-3xl md:text-5xl mb-10 text-center font-bold font-monserat">
         Play for the Long Term
       </h3>
       <p className="text-center container font-monserat w-8/12 mx-auto  mb-24">
@@ -12,10 +12,10 @@ export const HowItWorks = () => {
         rewarding for long-term players.
       </p>
       <div className="flex flex-col justify-center items-center p-2 z-10">
-        <h3 className="text-[32px] mb-24 text-center font-bold font-monserat">
+        <h3 className="text-2xl md:text-[32px] mb-24 text-center font-bold font-monserat">
           How It Works
         </h3>
-        <div className="grid grid-cols-3 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
+        <div className="grid grid-cols-1 gap-y-5 lg:grid-cols-3 lg:gap-x-[50px] container lg:w-[80%] 2xl:w-[70%] mx-auto">
           <IntoItem
             description="Players who complete specific tasks on the TraitForge Discord can mint NFTs with ETH starting on xxx-time."
             title="Whitelisted Participants"

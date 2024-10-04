@@ -4,19 +4,19 @@ import Image from "next/image";
 
 export const CreativeTeam = () => {
   return (
-    <section id="intro" className="relative pb-[250px]">
-      <h3 className="text-[48px] mb-10 text-center font-bold font-monserat">
+    <section  className="relative pb-[250px]">
+      <h3 className="text-3xl md:text-5xl mb-10 text-center font-bold font-monserat">
         ABOUT THE CREATIVE TEAM
       </h3>
-      <p className="text-center container font-monserat w-8/12 mx-auto  mb-24">
+      <p className="text-center container font-monserat md:w-8/12 mx-auto mb-10 md:mb-24">
         The TraitForge creative team includes developers JP Thor, OxManPeach,
         and Journey as well as artist xxx
       </p>
-      <div className="grid grid-cols-12 gap-8 container px-20">
-        <div className="col-span-4 relative">
+      <div className="grid grid-cols-12 md:gap-x-8 container lg:px-20">
+        <div className="col-span-12 md:col-span-4 relative">
           <Image src={"/images/team.png"} width={600} height={600} alt="jp thor image" />
         </div>
-        <div className="col-span-8 flex flex-col gap-10 py-20">
+        <div className="col-span-12 md:col-span-8 flex flex-col gap-10 py-20">
           <h4 className="from-[#057977] to-[#0ADFDB] bg-gradient-to-r text-transparent bg-clip-text text-5xl">
             JP THOR
           </h4>
