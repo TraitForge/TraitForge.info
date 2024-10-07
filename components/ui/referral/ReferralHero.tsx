@@ -27,7 +27,9 @@ export const ReferralHero = () => {
           long-term rewards by sharing your unique referral code with players.
         </motion.p>
         <Link
-          href={"/"}
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSfmpRyJK6b1K|Z¡90fMNzfDB3QubUqYf6-2CadRESxWIvUeRw/viewform?usp=sf_link"
+          }
           target="_blank"
           rel="noopener noreferrer"
           className="px-10 py-6 bg-gradient-to-r from-[#057977] to-[#0ADFDB] mt-12 rounded-full font-race inline-block text-center"

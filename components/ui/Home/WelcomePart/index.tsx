@@ -76,15 +76,15 @@ const WelcomePart = () => {
             transition={{ duration: 1, delay: 1 }}
             className="xl:ml-2"
           >
-           Infinite Possibilities!
+            Infinite Possibilities!
           </motion.p>
         </div>
-        <div className="flex max-md:flex-col gap-5 absolute bottom-10 md:bottom-5">
+        <div className="flex gap-5 absolute bottom-3">
           <Link
-            href={"/"}
+            href={"https://traitforge.game/"}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-10 py-6 bg-gradient-to-r from-[#057977] to-[#0ADFDB] rounded-full font-race"
+            className="px-2.5 md:px-10 py-2 md:py-6 bg-gradient-to-r max-md:text-[10px] from-[#057977] to-[#0ADFDB] rounded-full font-race"
           >
             Play Now (test-net)
           </Link>
@@ -92,7 +92,7 @@ const WelcomePart = () => {
             href={""}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-10 py-6 bg-gradient-to-r from-[#057977] to-[#0ADFDB] border text-transparent bg-clip-text  border-primary rounded-full font-race"
+            className="px-2.5 md:px-10 py-2 md:py-6 bg-gradient-to-r max-md:text-[10px] from-[#057977] to-[#0ADFDB] border text-transparent bg-clip-text  border-primary rounded-full font-race"
           >
             Discord
           </Link>
@@ -103,8 +103,8 @@ const WelcomePart = () => {
           height="551"
           fill="none"
           viewBox="0 0 587 551"
-          className="absolute right-5 md:right-[64px] bottom-5 md:bottom-14"
-
+          preserveAspectRatio="none"
+          className="absolute right-5 md:right-[64px] bottom-5 md:bottom-14 max-md:hidden md:block max-h-[60vh]"
         >
           <path
             stroke="url(#paint0_linear_1555_652)"
@@ -124,9 +124,39 @@ const WelcomePart = () => {
             </linearGradient>
           </defs>
         </svg>
-        <ul className="flex items-center flex-col gap-4  list-none absolute top-28 md:top-10 right-3 md:right-[54px]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="58"
+          height="374"
+          fill="none"
+          viewBox="0 0 58 374"
+          preserveAspectRatio="none"
+          className="absolute right-5 bottom-5 md:bottom-14 max-md:block md:hidden"
+        >
+          <path
+            stroke="url(#paint0_linear_1828_8572)"
+            d="M57 0v357c0 8.837-7.163 16-16 16H0"
+          ></path>
+          <defs>
+            <linearGradient
+              id="paint0_linear_1828_8572"
+              x1="46.398"
+              x2="-39.6"
+              y1="0"
+              y2="9.1"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#fff"></stop>
+              <stop offset="1" stopColor="#35FFE7"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+        <ul className="flex items-center flex-col gap-4  list-none absolute top-28 md:top-[100px] right-3 md:right-[52px]">
           {mediaLinks.map((link, index) => (
-            <li key={index} className="hover:bg-primary bg-opacity-30 rounded-md">
+            <li
+              key={index}
+              className="hover:bg-primary bg-opacity-30 rounded-md"
+            >
               <Link
                 href={link.url}
                 target="_blank"
