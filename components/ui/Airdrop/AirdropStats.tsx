@@ -15,7 +15,7 @@ export const AirdropStats = () => {
   const fetchData = async () => {
     setIsFetching(true);
     try {
-      const provider = new ethers.JsonRpcProvider(process.env.ALCHEMY_RPC);
+      const provider = new ethers.JsonRpcProvider(process.env.NEXT_PUBLIC_ALCHEMY_RPCURL);
       const contract = new ethers.Contract(CONTRACT_ADDRESSES.Airdrop, AirdropABI, provider);
       const result = await contract.userInfo(address);
       const totalValue = await contract.totalValue();
