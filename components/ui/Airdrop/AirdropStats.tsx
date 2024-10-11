@@ -42,7 +42,7 @@ export const AirdropStats = () => {
             <div className="col-start-1 col-span-12 rounded-lg shadow-lg p-4">
               <div className="grid grid-cols-12">
               <input
-                 className=" col-start-3 col-span-8 bg-transparent bg-gradient-to-tr to-light-dark from-light-blue rounded-2xl border border-light-blue  inline text-[15px] py-[6px] px-[10px] w-full md:max-w-[500px] min-w-[250px]"
+                 className="col-start-3 col-span-8 bg-transparent bg-gradient-to-tr to-light-dark from-light-blue rounded-2xl border border-light-blue  inline text-[15px] py-[6px] px-[10px] w-full md:max-w-[500px] min-w-[150px]"
                  onChange={e => setAddress(e.target.value)}
                  value={address}
                  placeholder="Enter Address"
